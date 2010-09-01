@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
 		4D38AC00122E4CDE001F4FFC /* UTDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D38ABFF122E4CDE001F4FFC /* UTDelegate.m */; };
+		4D38AC14122EB22A001F4FFC /* UTiTunesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D38AC13122EB22A001F4FFC /* UTiTunesController.m */; };
+		4D38AC33122EBEE5001F4FFC /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D38AC32122EBEE5001F4FFC /* ScriptingBridge.framework */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -25,6 +27,10 @@
 		32CA4F630368D1EE00C91783 /* UrTunes_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UrTunes_Prefix.pch; sourceTree = "<group>"; };
 		4D38ABFE122E4CDE001F4FFC /* UTDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UTDelegate.h; path = Source/UTDelegate.h; sourceTree = "<group>"; };
 		4D38ABFF122E4CDE001F4FFC /* UTDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UTDelegate.m; path = Source/UTDelegate.m; sourceTree = "<group>"; };
+		4D38AC12122EB22A001F4FFC /* UTiTunesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UTiTunesController.h; path = Source/UTiTunesController.h; sourceTree = "<group>"; };
+		4D38AC13122EB22A001F4FFC /* UTiTunesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UTiTunesController.m; path = Source/UTiTunesController.m; sourceTree = "<group>"; };
+		4D38AC32122EBEE5001F4FFC /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = /System/Library/Frameworks/ScriptingBridge.framework; sourceTree = "<absolute>"; };
+		4D38AC37122EC28D001F4FFC /* iTunes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iTunes.h; path = Source/iTunes.h; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* UrTunes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UrTunes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -35,6 +41,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				4D38AC33122EBEE5001F4FFC /* ScriptingBridge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,8 +51,11 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				4D38AC37122EC28D001F4FFC /* iTunes.h */,
 				4D38ABFE122E4CDE001F4FFC /* UTDelegate.h */,
 				4D38ABFF122E4CDE001F4FFC /* UTDelegate.m */,
+				4D38AC12122EB22A001F4FFC /* UTiTunesController.h */,
+				4D38AC13122EB22A001F4FFC /* UTiTunesController.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -110,6 +120,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4D38AC32122EBEE5001F4FFC /* ScriptingBridge.framework */,
 				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
 				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
 			);
@@ -173,6 +184,7 @@
 			files = (
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
 				4D38AC00122E4CDE001F4FFC /* UTDelegate.m in Sources */,
+				4D38AC14122EB22A001F4FFC /* UTiTunesController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,6 +247,7 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = 4.2;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -248,6 +261,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_VERSION = 4.2;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
