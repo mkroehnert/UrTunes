@@ -10,6 +10,7 @@
 
 
 @implementation UTDelegate
+
 - (void) applicationWillFinishLaunching:(NSNotification *)notification
 {
     [self createStatusMenu];
@@ -17,14 +18,14 @@
 
 - (void) createStatusMenu
 {
-    NSStatusBar *bar = [NSStatusBar systemStatusBar];
+    NSStatusBar* bar = [NSStatusBar systemStatusBar];
     
-    NSStatusItem* theItem = [bar statusItemWithLength:NSVariableStatusItemLength];
-    [theItem retain];
+    statusItem = [bar statusItemWithLength:NSVariableStatusItemLength];
+    [statusItem retain];
     
-    [theItem setTitle: NSLocalizedString(@"UT",@"")];
-    [theItem setHighlightMode:YES];
-//    [theItem setMenu:theMenu];
+    [statusItem setTitle: NSLocalizedString(@"UT",@"")];
+    [statusItem setHighlightMode:YES];
+//    [statusItem setMenu: theMenu];
 }
 
 @end

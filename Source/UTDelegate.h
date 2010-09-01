@@ -11,7 +11,7 @@
 
 @interface UTDelegate : NSObject
 {
-
+    NSStatusItem* statusItem;
 }
 
 - (void) createStatusMenu;
