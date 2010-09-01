@@ -15,5 +15,6 @@
 }
 
 - (void) createStatusMenu;
+- (void) statusBarAction;
 
 @end
