@@ -7,6 +7,7 @@
 //
 
 #import "UTiTunesController.h"
+#import "iTunes.h"
 
 
 @implementation UTiTunesController
@@ -21,8 +22,9 @@
 }
 
 - (IBAction) log:(id)sender
-{    
-    if ( [iTunes isRunning] ) {
+{
+    if ([iTunes isRunning])
+    {
         if (iTunesEPlSPlaying == [iTunes playerState])
             NSLog(@"Current song is %@", [[iTunes currentTrack] name]);
         else
@@ -59,5 +61,13 @@
         return;
     [iTunes setSoundVolume: [volumeSlider integerValue]];
 }
+
+- (void) setVolumeSliderPosition
+{
+    if ([iTunes isRunning])
+        [volumeSlider setIntegerValue: [iTunes soundVolume]];
+
+}
+
 
 @end

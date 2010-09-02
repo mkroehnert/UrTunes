@@ -6,9 +6,9 @@
 //  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
 
-#import "iTunes.h"
 #import <Cocoa/Cocoa.h>
 
+@class iTunesApplication;
 
 @interface UTiTunesController : NSObject {
     iTunesApplication* iTunes;
@@ -20,5 +20,6 @@
 - (IBAction) previousTrack:(id)sender;
 - (IBAction) nextTrack:(id)sender;
 - (IBAction) setNewITunesVolume:(id)sender;
+- (void) setVolumeSliderPosition;
 
 @end
