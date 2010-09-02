@@ -25,5 +25,6 @@
 - (void) setVolumeSliderPosition;
 - (void) updateTrackInfo;
 - (void) setTrack:(NSString*) newTrackName andArtist:(NSString*) newArtistName;
+- (void) updateRating;
 
 @end

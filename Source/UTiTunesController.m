@@ -68,5 +68,10 @@
     [artistNameLabel setStringValue: newArtistName];
 }
 
+- (void) updateRating
+{
+	[trackRating setIntegerValue: [[iTunes currentTrack] albumRating]];
+}
+
 
 @end
