@@ -21,19 +21,6 @@
     return self;
 }
 
-- (IBAction) log:(id)sender
-{
-    if ([iTunes isRunning])
-    {
-        if (iTunesEPlSPlaying == [iTunes playerState])
-            NSLog(@"Current song is %@", [[iTunes currentTrack] name]);
-        else
-            NSLog(@"iTunes is currently not playing");
-    }
-    else
-        NSLog(@"No iTunes Running");
-}
-
 - (IBAction) playPause:(id)sender
 {
     if (![iTunes isRunning])
