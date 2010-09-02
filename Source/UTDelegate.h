@@ -18,5 +18,6 @@
 
 - (void) createStatusMenu;
 - (void) statusBarAction;
+- (void) handleITunesNotification:(NSNotification *)iTunesNotification;
 
 @end
