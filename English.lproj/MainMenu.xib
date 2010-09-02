@@ -214,7 +214,7 @@
 			<object class="NSWindowTemplate" id="589478772">
 				<int key="NSWindowStyleMask">8215</int>
 				<int key="NSWindowBacking">2</int>
-				<string key="NSWindowRect">{{196, 288}, {230, 222}}</string>
+				<string key="NSWindowRect">{{196, 355}, {230, 155}}</string>
 				<int key="NSWTFlags">603980800</int>
 				<string key="NSWindowTitle">UrTunes</string>
 				<string key="NSWindowClass">NSPanel</string>
@@ -314,7 +314,7 @@
 						<object class="NSTextField" id="485224136">
 							<reference key="NSNextResponder" ref="736171054"/>
 							<int key="NSvFlags">268</int>
-							<string key="NSFrame">{{17, 188}, {166, 14}}</string>
+							<string key="NSFrame">{{17, 121}, {166, 14}}</string>
 							<reference key="NSSuperview" ref="736171054"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSTextFieldCell" key="NSCell" id="841664606">
@@ -341,7 +341,7 @@
 						<object class="NSTextField" id="1043963557">
 							<reference key="NSNextResponder" ref="736171054"/>
 							<int key="NSvFlags">268</int>
-							<string key="NSFrame">{{17, 166}, {166, 14}}</string>
+							<string key="NSFrame">{{17, 99}, {166, 14}}</string>
 							<reference key="NSSuperview" ref="736171054"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSTextFieldCell" key="NSCell" id="216867205">
@@ -360,7 +360,7 @@
 						<object class="NSLevelIndicator" id="856356775">
 							<reference key="NSNextResponder" ref="736171054"/>
 							<int key="NSvFlags">268</int>
-							<string key="NSFrame">{{20, 140}, {96, 18}}</string>
+							<string key="NSFrame">{{20, 73}, {96, 18}}</string>
 							<reference key="NSSuperview" ref="736171054"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSLevelIndicatorCell" key="NSCell" id="865954768">
@@ -375,7 +375,7 @@
 							</object>
 						</object>
 					</object>
-					<string key="NSFrameSize">{230, 222}</string>
+					<string key="NSFrameSize">{230, 155}</string>
 					<reference key="NSSuperview"/>
 				</object>
 				<string key="NSScreenRect">{{0, 0}, {1440, 878}}</string>
@@ -700,13 +700,13 @@
 						<reference key="object" ref="736171054"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<reference ref="1043963557"/>
+							<reference ref="485224136"/>
+							<reference ref="856356775"/>
+							<reference ref="432669123"/>
 							<reference ref="404002629"/>
 							<reference ref="994715549"/>
-							<reference ref="1043963557"/>
 							<reference ref="1060583866"/>
-							<reference ref="485224136"/>
-							<reference ref="432669123"/>
-							<reference ref="856356775"/>
 						</object>
 						<reference key="parent" ref="589478772"/>
 					</object>
@@ -932,8 +932,8 @@
 					<string>{{6, 978}, {478, 20}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{590, 637}, {230, 222}}</string>
-					<string>{{590, 637}, {230, 222}}</string>
+					<string>{{590, 704}, {230, 155}}</string>
+					<string>{{590, 704}, {230, 155}}</string>
 					<boolean value="YES"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
