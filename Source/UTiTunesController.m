@@ -46,4 +46,11 @@
     [iTunes previousTrack];
 }
 
+- (IBAction) nextTrack:(id)sender
+{
+    if (![iTunes isRunning])
+        return;
+    [iTunes nextTrack];
+}
+
 @end

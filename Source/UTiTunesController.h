@@ -17,5 +17,6 @@
 - (IBAction) log:(id)sender;
 - (IBAction) playPause:(id)sender;
 - (IBAction) previousTrack:(id)sender;
+- (IBAction) nextTrack:(id)sender;
 
 @end
