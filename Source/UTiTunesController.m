@@ -53,4 +53,11 @@
     [iTunes nextTrack];
 }
 
+- (IBAction) setNewITunesVolume:(id)sender
+{
+    if (![iTunes isRunning])
+        return;
+    [iTunes setSoundVolume: [volumeSlider integerValue]];
+}
+
 @end
