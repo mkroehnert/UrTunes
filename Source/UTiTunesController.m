@@ -56,6 +56,12 @@
 
 }
 
+- (void) updateTrackInfo
+{
+    [self setTrack: [[iTunes currentTrack] name] andArtist: [[iTunes currentTrack] artist]];
+}
+
+
 - (void) setTrack:(NSString*) newTrackName andArtist:(NSString*) newArtistName
 {
 	[trackNameLabel setStringValue: newTrackName];
