@@ -32,4 +32,11 @@
         NSLog(@"No iTunes Running");
 }
 
+- (IBAction) playPause:(id)sender
+{
+    if (![iTunes isRunning])
+        return;
+    [iTunes playpause];
+}
+
 @end

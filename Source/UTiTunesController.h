@@ -15,5 +15,6 @@
 }
 
 - (IBAction) log:(id)sender;
+- (IBAction) playPause:(id)sender;
 
 @end
