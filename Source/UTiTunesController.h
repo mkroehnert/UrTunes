@@ -23,5 +23,6 @@
 - (IBAction) nextTrack:(id)sender;
 - (IBAction) setNewITunesVolume:(id)sender;
 - (void) setVolumeSliderPosition;
+- (void) setTrack:(NSString*) newTrackName andArtist:(NSString*) newArtistName;
 
 @end

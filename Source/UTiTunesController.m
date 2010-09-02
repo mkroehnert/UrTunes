@@ -56,5 +56,11 @@
 
 }
 
+- (void) setTrack:(NSString*) newTrackName andArtist:(NSString*) newArtistName
+{
+	[trackNameLabel setStringValue: newTrackName];
+    [artistNameLabel setStringValue: newArtistName];
+}
+
 
 @end
