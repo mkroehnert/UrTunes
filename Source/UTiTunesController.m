@@ -39,4 +39,11 @@
     [iTunes playpause];
 }
 
+- (IBAction) previousTrack:(id)sender
+{
+    if (![iTunes isRunning])
+        return;
+    [iTunes previousTrack];
+}
+
 @end
