@@ -6,6 +6,7 @@
 //  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
 
+#import "UTiTunesController.h"
 #import "UTDelegate.h"
 
 
@@ -15,6 +16,12 @@
 {
     [self createStatusMenu];
 }
+
+-(void)applicationDidFinishLaunching:(NSNotification *)aNotification
+{
+    [iTunesController setVolumeSliderPosition];
+}
+
 
 - (void) createStatusMenu
 {
