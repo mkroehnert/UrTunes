@@ -1,0 +1,50 @@
+ABOUT
+-----
+
+UrTunes is a small application which can controll iTunes.
+It was started as a learning experience and because the
+TotalTunesControl developers cut off the free version of their
+program.
+
+
+FEATURES
+--------
+
+- Play/Pause iTunes
+- go to next/previous track in the current playlist
+- change the iTunes volume
+- show track information (name, artist, rating)
+
+
+REQUIREMENTS
+------------
+
+Comupter running Mac OS X >= 10.5 with Xcode installed.
+
+
+LICENSE
+-------
+
+UrTunes is licensed under GPLv3 or later (see LICENSE.txt).
+
+
+DOWNLOADING
+-----------
+
+UrTunes can be downloaded from its Github page:
+
+http://github.com/mkroehnert/UrTunes
+
+
+INSTALLATION
+------------
+
+Download the source from GitHub and compile the Xcode project.
+
+
+PROBLEMS
+--------
+
+Feature requests and bugs can be reported on the Github issue page:
+
+http://github.com/mkroehnert/UrTunes/issues
