@@ -8,10 +8,12 @@
 
 #import <Cocoa/Cocoa.h>
 
+@class UTiTunesController;
 
 @interface UTDelegate : NSObject
 {
     NSStatusItem* statusItem;
+    IBOutlet UTiTunesController* iTunesController;
 }
 
 - (void) createStatusMenu;
