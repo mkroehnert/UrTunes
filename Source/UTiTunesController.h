@@ -12,7 +12,10 @@
 
 @interface UTiTunesController : NSObject {
     iTunesApplication* iTunes;
+    IBOutlet NSTextField* trackNameLabel;
+    IBOutlet NSTextField* artistNameLabel;
     IBOutlet NSSlider* volumeSlider;
+    IBOutlet NSLevelIndicator* trackRating;
 }
 
 - (IBAction) log:(id)sender;
