@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
 		4D09EF071231273D00115E35 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 4D38AEEC1231249F001F4FFC /* Credits.rtf */; };
+		4D09EF361231322600115E35 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D09EF351231322600115E35 /* Sparkle.framework */; };
 		4D38AC00122E4CDE001F4FFC /* UTDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D38ABFF122E4CDE001F4FFC /* UTDelegate.m */; };
 		4D38AC14122EB22A001F4FFC /* UTiTunesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D38AC13122EB22A001F4FFC /* UTiTunesController.m */; };
 		4D38AC33122EBEE5001F4FFC /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D38AC32122EBEE5001F4FFC /* ScriptingBridge.framework */; };
@@ -26,6 +27,7 @@
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		32CA4F630368D1EE00C91783 /* UrTunes_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UrTunes_Prefix.pch; sourceTree = "<group>"; };
+		4D09EF351231322600115E35 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = Frameworks/Sparkle.framework; sourceTree = "<group>"; };
 		4D38ABFE122E4CDE001F4FFC /* UTDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UTDelegate.h; path = Source/UTDelegate.h; sourceTree = "<group>"; };
 		4D38ABFF122E4CDE001F4FFC /* UTDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UTDelegate.m; path = Source/UTDelegate.m; sourceTree = "<group>"; };
 		4D38AC12122EB22A001F4FFC /* UTiTunesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UTiTunesController.h; path = Source/UTiTunesController.h; sourceTree = "<group>"; };
@@ -46,6 +48,7 @@
 			files = (
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 				4D38AC33122EBEE5001F4FFC /* ScriptingBridge.framework in Frameworks */,
+				4D09EF361231322600115E35 /* Sparkle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,6 +130,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4D09EF351231322600115E35 /* Sparkle.framework */,
 				4D38AC32122EBEE5001F4FFC /* ScriptingBridge.framework */,
 				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
 				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
@@ -223,6 +227,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Frameworks\"",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
@@ -240,6 +248,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Frameworks\"",
+				);
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = UrTunes_Prefix.pch;
