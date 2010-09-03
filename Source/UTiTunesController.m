@@ -62,10 +62,12 @@
 
 - (void) updatePlayPauseTitle
 {
+    NSString* titleString = @"Play";
     if (iTunesEPlSPlaying == [iTunes playerState])
-        [playPauseMenuItem setTitle: @"Pause"];
-    else
-        [playPauseMenuItem setTitle: @"Play"];
+        titleString = @"Pause";
+    
+    [playPauseMenuItem setTitle: titleString];
+    [playPauseButton setTitle: titleString];
 }
 
 
