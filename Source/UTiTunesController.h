@@ -25,6 +25,7 @@
     IBOutlet NSTextField* artistNameLabel;
     IBOutlet NSSlider* volumeSlider;
     IBOutlet NSLevelIndicator* trackRating;
+    IBOutlet NSMenuItem* playPauseMenuItem;
 }
 
 - (IBAction) playPause:(id)sender;
