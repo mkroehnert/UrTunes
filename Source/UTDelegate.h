@@ -23,6 +23,7 @@
 {
     NSStatusItem* statusItem;
     IBOutlet NSMenu* statusBarMenu;
+    IBOutlet NSPanel* iTunesControlPanel;
     IBOutlet UTiTunesController* iTunesController;
 }
 
