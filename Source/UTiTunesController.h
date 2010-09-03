@@ -25,6 +25,7 @@
     IBOutlet NSTextField* artistNameLabel;
     IBOutlet NSSlider* volumeSlider;
     IBOutlet NSLevelIndicator* trackRating;
+    IBOutlet NSButton* playPauseButton;
     IBOutlet NSMenuItem* playPauseMenuItem;
 }
 
