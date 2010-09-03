@@ -34,6 +34,8 @@
 {
     if (![iTunes isRunning])
         return;
+    [self updatePlayPauseTitle];
+
     [iTunes playpause];
 }
 
@@ -57,6 +59,15 @@
         return;
     [iTunes setSoundVolume: [volumeSlider integerValue]];
 }
+
+- (void) updatePlayPauseTitle
+{
+    if (iTunesEPlSPlaying == [iTunes playerState])
+        [playPauseMenuItem setTitle: @"Pause"];
+    else
+        [playPauseMenuItem setTitle: @"Play"];
+}
+
 
 - (void) setVolumeSliderPosition
 {
