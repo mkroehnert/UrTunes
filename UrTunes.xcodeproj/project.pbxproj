@@ -10,6 +10,7 @@
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
 		4D09EF071231273D00115E35 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 4D38AEEC1231249F001F4FFC /* Credits.rtf */; };
 		4D09EF361231322600115E35 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D09EF351231322600115E35 /* Sparkle.framework */; };
+		4D09EF3C123132F100115E35 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4D09EF351231322600115E35 /* Sparkle.framework */; };
 		4D38AC00122E4CDE001F4FFC /* UTDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D38ABFF122E4CDE001F4FFC /* UTDelegate.m */; };
 		4D38AC14122EB22A001F4FFC /* UTiTunesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D38AC13122EB22A001F4FFC /* UTiTunesController.m */; };
 		4D38AC33122EBEE5001F4FFC /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D38AC32122EBEE5001F4FFC /* ScriptingBridge.framework */; };
@@ -17,6 +18,20 @@
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4D09EF3B123132A900115E35 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			comments = "Copy the Sparkle Framework into the .app directory.";
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4D09EF3C123132F100115E35 /* Sparkle.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -147,6 +162,7 @@
 			buildPhases = (
 				8D1107290486CEB800E47090 /* Resources */,
 				8D11072C0486CEB800E47090 /* Sources */,
+				4D09EF3B123132A900115E35 /* CopyFiles */,
 				8D11072E0486CEB800E47090 /* Frameworks */,
 			);
 			buildRules = (
