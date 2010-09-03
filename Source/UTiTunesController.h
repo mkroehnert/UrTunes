@@ -34,9 +34,10 @@
 - (IBAction) nextTrack:(id)sender;
 - (IBAction) setNewITunesVolume:(id)sender;
 - (void) updatePlayPauseTitle;
-- (void) setVolumeSliderPosition;
+- (void) updateVolumeSliderPosition;
 - (void) updateTrackInfo;
 - (void) setTrack:(NSString*) newTrackName andArtist:(NSString*) newArtistName;
 - (void) updateRating;
+- (void) updateControllerStatus;
 
 @end

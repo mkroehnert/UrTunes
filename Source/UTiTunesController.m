@@ -71,7 +71,7 @@
 }
 
 
-- (void) setVolumeSliderPosition
+- (void) updateVolumeSliderPosition
 {
     if ([iTunes isRunning])
         [volumeSlider setIntegerValue: [iTunes soundVolume]];
@@ -95,5 +95,12 @@
 	[trackRating setIntegerValue: [[iTunes currentTrack] albumRating]];
 }
 
+- (void) updateControllerStatus
+{
+    [self updateVolumeSliderPosition];
+    [self updateTrackInfo];
+    [self updateRating];
+    [self updatePlayPauseTitle];
+}
 
 @end
