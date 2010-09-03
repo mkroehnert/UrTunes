@@ -22,11 +22,12 @@
 @interface UTDelegate : NSObject
 {
     NSStatusItem* statusItem;
+    IBOutlet NSMenu* statusBarMenu;
     IBOutlet UTiTunesController* iTunesController;
 }
 
 - (void) createStatusMenu;
-- (void) statusBarAction;
+- (IBAction) quitApplication:(id)sender;
 - (void) handleITunesNotification:(NSNotification *)iTunesNotification;
 
 @end

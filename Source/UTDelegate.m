@@ -46,17 +46,14 @@
     
     [statusItem setTitle: NSLocalizedString(@"UT",@"")];
     [statusItem setHighlightMode:YES];
-    [statusItem setTarget: self];
-    [statusItem setAction: @selector(statusBarAction)];
     [statusItem setToolTip: @"UrTunes - Control iTunes with one Click"];
+    [statusItem setMenu: statusBarMenu];
 //    [statusItem setImage: [NSImage imageNamed:@"statusBarIcon"]];
 //    [statusItem setAlternateImage: [NSImage imageNamed:@"statusBarIcon"]];
-//    [statusItem setMenu: theMenu];
 }
 
-- (void) statusBarAction
+- (IBAction) quitApplication:(id)sender
 {
-    NSLog(@"StatusBar clicked!");
     [NSApp terminate:nil];
 }
 
