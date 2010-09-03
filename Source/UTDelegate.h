@@ -29,6 +29,7 @@
 
 - (void) createStatusMenu;
 - (IBAction) quitApplication:(id)sender;
+- (IBAction) showHideITunesControlPanel:(id)sender;
 - (void) handleITunesNotification:(NSNotification *)iTunesNotification;
 
 @end

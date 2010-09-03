@@ -57,6 +57,15 @@
     [NSApp terminate:nil];
 }
 
+- (IBAction) showHideITunesControlPanel:(id)sender
+{
+	if ([iTunesControlPanel isVisible])
+        [iTunesControlPanel orderOut:sender];
+    else
+        [iTunesControlPanel orderFront:sender];
+}
+
+
 - (void) handleITunesNotification:(NSNotification *)iTunesNotification
 {
     [iTunesController setVolumeSliderPosition];
