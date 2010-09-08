@@ -30,5 +30,7 @@
 	<string>Copyright 2010 Manfred Kroehnert</string>
 	<key>SUPublicDSAKeyFile</key>
 	<string>sparkle-sign-key-pub.pem</string>
+	<key>SUFeedURL</key>
+	<string>http://mkroehnert.github.com/UrTunes/UrTunesAppcast.xml</string>
 </dict>
 </plist>
