@@ -8,9 +8,9 @@
 		<string key="IBDocument.HIToolboxVersion">353.00</string>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="491"/>
-			<integer value="453"/>
 			<integer value="56"/>
+			<integer value="512"/>
+			<integer value="453"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -215,7 +215,7 @@
 			<object class="NSWindowTemplate" id="589478772">
 				<int key="NSWindowStyleMask">8215</int>
 				<int key="NSWindowBacking">2</int>
-				<string key="NSWindowRect">{{196, 355}, {230, 155}}</string>
+				<string key="NSWindowRect">{{1067, 723}, {230, 155}}</string>
 				<int key="NSWTFlags">603980800</int>
 				<string key="NSWindowTitle">UrTunes</string>
 				<string key="NSWindowClass">NSPanel</string>
@@ -444,6 +444,14 @@
 					<object class="NSMenuItem" id="671584321">
 						<reference key="NSMenu" ref="124948560"/>
 						<string key="NSTitle">About UrTunes</string>
+						<string key="NSKeyEquiv"/>
+						<int key="NSMnemonicLoc">2147483647</int>
+						<reference key="NSOnImage" ref="35465992"/>
+						<reference key="NSMixedImage" ref="502551668"/>
+					</object>
+					<object class="NSMenuItem" id="1032481657">
+						<reference key="NSMenu" ref="124948560"/>
+						<string key="NSTitle">Update UrTunes</string>
 						<string key="NSKeyEquiv"/>
 						<int key="NSMnemonicLoc">2147483647</int>
 						<reference key="NSOnImage" ref="35465992"/>
@@ -681,6 +689,14 @@
 						<reference key="destination" ref="432669123"/>
 					</object>
 					<int key="connectionID">510</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">checkForUpdates:</string>
+						<reference key="source" ref="515540137"/>
+						<reference key="destination" ref="1032481657"/>
+					</object>
+					<int key="connectionID">513</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -993,6 +1009,7 @@
 							<reference ref="671584321"/>
 							<reference ref="257290101"/>
 							<reference ref="21666191"/>
+							<reference ref="1032481657"/>
 						</object>
 						<reference key="parent" ref="1049"/>
 						<string key="objectName">statusBarMenu</string>
@@ -1041,6 +1058,11 @@
 						<int key="objectID">511</int>
 						<reference key="object" ref="515540137"/>
 						<reference key="parent" ref="1049"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">512</int>
+						<reference key="object" ref="1032481657"/>
+						<reference key="parent" ref="124948560"/>
 					</object>
 				</object>
 			</object>
@@ -1119,6 +1141,7 @@
 					<string>505.IBPluginDependency</string>
 					<string>506.IBPluginDependency</string>
 					<string>511.IBPluginDependency</string>
+					<string>512.IBPluginDependency</string>
 					<string>56.IBPluginDependency</string>
 					<string>56.ImportedFromIB2</string>
 					<string>57.IBEditorWindowLastContentRect</string>
@@ -1171,8 +1194,8 @@
 					<string>{{6, 978}, {478, 20}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{590, 704}, {230, 155}}</string>
-					<string>{{590, 704}, {230, 155}}</string>
+					<string>{{360, 689}, {230, 155}}</string>
+					<string>{{360, 689}, {230, 155}}</string>
 					<boolean value="YES"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -1190,7 +1213,8 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{360, 383}, {183, 143}}</string>
+					<string>{{360, 363}, {183, 163}}</string>
+					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -1231,7 +1255,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">511</int>
+			<int key="maxID">513</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
