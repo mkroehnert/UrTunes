@@ -21,6 +21,12 @@
 
 @implementation UTDelegate
 
+- (void) awakeFromNib
+{
+    [iTunesControlPanel setFrameAutosaveName: @"PanelPosition"];
+}
+
+
 - (void) applicationWillFinishLaunching:(NSNotification *)notification
 {
     [self createStatusMenu];
