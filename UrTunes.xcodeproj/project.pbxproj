@@ -12,6 +12,7 @@
 		4D09EF361231322600115E35 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D09EF351231322600115E35 /* Sparkle.framework */; };
 		4D09EF3C123132F100115E35 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4D09EF351231322600115E35 /* Sparkle.framework */; };
 		4D09EF48123139F900115E35 /* sparkle-sign-key-pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = 4D09EF47123139F900115E35 /* sparkle-sign-key-pub.pem */; };
+		4D09EF56123327BC00115E35 /* UrTunes-Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 4D09EF55123327BC00115E35 /* UrTunes-Icon.icns */; };
 		4D38AC00122E4CDE001F4FFC /* UTDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D38ABFF122E4CDE001F4FFC /* UTDelegate.m */; };
 		4D38AC14122EB22A001F4FFC /* UTiTunesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D38AC13122EB22A001F4FFC /* UTiTunesController.m */; };
 		4D38AC33122EBEE5001F4FFC /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D38AC32122EBEE5001F4FFC /* ScriptingBridge.framework */; };
@@ -45,6 +46,7 @@
 		32CA4F630368D1EE00C91783 /* UrTunes_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UrTunes_Prefix.pch; sourceTree = "<group>"; };
 		4D09EF351231322600115E35 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = Frameworks/Sparkle.framework; sourceTree = "<group>"; };
 		4D09EF47123139F900115E35 /* sparkle-sign-key-pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "sparkle-sign-key-pub.pem"; sourceTree = "<group>"; };
+		4D09EF55123327BC00115E35 /* UrTunes-Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = "UrTunes-Icon.icns"; path = "Resources/UrTunes-Icon.icns"; sourceTree = "<group>"; };
 		4D38ABFE122E4CDE001F4FFC /* UTDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UTDelegate.h; path = Source/UTDelegate.h; sourceTree = "<group>"; };
 		4D38ABFF122E4CDE001F4FFC /* UTDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UTDelegate.m; path = Source/UTDelegate.m; sourceTree = "<group>"; };
 		4D38AC12122EB22A001F4FFC /* UTiTunesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UTiTunesController.h; path = Source/UTiTunesController.h; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4D09EF55123327BC00115E35 /* UrTunes-Icon.icns */,
 				4D09EF47123139F900115E35 /* sparkle-sign-key-pub.pem */,
 				4D38AEEC1231249F001F4FFC /* Credits.rtf */,
 				4D38AE44122FF153001F4FFC /* LICENSE.txt */,
@@ -204,6 +207,7 @@
 				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
 				4D09EF071231273D00115E35 /* Credits.rtf in Resources */,
 				4D09EF48123139F900115E35 /* sparkle-sign-key-pub.pem in Resources */,
+				4D09EF56123327BC00115E35 /* UrTunes-Icon.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
