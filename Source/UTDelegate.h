@@ -32,6 +32,7 @@
 - (IBAction) quitApplication:(id)sender;
 - (IBAction) showHideITunesControlPanel:(id)sender;
 - (pid_t) getITunesProcessID;
+- (void) registerForITunesNotifications;
 - (void) handleITunesNotification:(NSNotification *)iTunesNotification;
 
 @end
