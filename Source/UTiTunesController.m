@@ -30,6 +30,7 @@
     return self;
 }
 
+
 - (IBAction) playPause:(id)sender
 {
     if (![iTunes isRunning])
@@ -39,12 +40,14 @@
     [iTunes playpause];
 }
 
+
 - (IBAction) previousTrack:(id)sender
 {
     if (![iTunes isRunning])
         return;
     [iTunes previousTrack];
 }
+
 
 - (IBAction) nextTrack:(id)sender
 {
@@ -53,12 +56,14 @@
     [iTunes nextTrack];
 }
 
+
 - (IBAction) setNewITunesVolume:(id)sender
 {
     if (![iTunes isRunning])
         return;
     [iTunes setSoundVolume: [volumeSlider integerValue]];
 }
+
 
 - (void) updatePlayPauseTitle
 {
@@ -76,6 +81,11 @@
 	iTunes = [SBApplication applicationWithProcessIdentifier: pid];
 }
 
+
+- (void) resetTrackInformation
+{
+    [self setTrack:@"Trackname" andArtist:@"Artistname"];
+}
 
 
 - (void) updateVolumeSliderPosition
@@ -105,6 +115,12 @@
 - (void) updateControllerStatus
 {
     [self updateVolumeSliderPosition];
+    // omit apple script error if no track is currently selected
+    if ([iTunes selection])
+    {
+        [self resetTrackInformation];
+        return;
+    }
     [self updateTrackInfo];
     [self updateRating];
     [self updatePlayPauseTitle];
