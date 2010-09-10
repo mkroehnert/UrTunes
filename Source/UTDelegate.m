@@ -34,8 +34,19 @@
 
 -(void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    [iTunesController updateControllerStatus];
+    const pid_t iTunesProcessID = [self getITunesProcessID];
+    // create iTunes controller if program is running
+    // otherwise register for iTunes startup notification
+    if (0 < iTunesProcessID)
+    {
         [self registerForITunesNotifications];
+        [iTunesController createITunesControllerWithPID: iTunesProcessID];
+        [iTunesController updateControllerStatus];
+    }
+    else
+    {
+    	
+    }
 }
 
 

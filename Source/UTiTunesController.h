@@ -33,6 +33,7 @@
 - (IBAction) previousTrack:(id)sender;
 - (IBAction) nextTrack:(id)sender;
 - (IBAction) setNewITunesVolume:(id)sender;
+- (void) createITunesControllerWithPID:(pid_t)pid;
 - (void) updatePlayPauseTitle;
 - (void) updateVolumeSliderPosition;
 - (void) updateTrackInfo;

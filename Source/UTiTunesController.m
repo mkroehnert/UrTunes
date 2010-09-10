@@ -25,7 +25,7 @@
 {
     self = [super init];
     if (self)
-        iTunes = [SBApplication applicationWithBundleIdentifier:@"com.apple.iTunes"];
+        iTunes = nil;
 
     return self;
 }
@@ -69,6 +69,13 @@
     [playPauseMenuItem setTitle: titleString];
     [playPauseButton setTitle: titleString];
 }
+
+
+- (void) createITunesControllerWithPID:(pid_t)pid
+{
+	iTunes = [SBApplication applicationWithProcessIdentifier: pid];
+}
+
 
 
 - (void) updateVolumeSliderPosition
