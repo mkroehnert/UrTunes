@@ -123,7 +123,7 @@
 {
     [self updateVolumeSliderPosition];
     // omit apple script error if no track is currently selected
-    if ([iTunes selection])
+    if (![[iTunes currentTrack] exists])
     {
         [self resetTrackInformation];
         return;
