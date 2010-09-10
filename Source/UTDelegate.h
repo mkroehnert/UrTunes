@@ -34,6 +34,7 @@
 - (pid_t) getITunesProcessID;
 - (void) registerForITunesNotifications;
 - (void) handleApplicationStartupNotification:(NSNotification *)startupNotification;
+- (void) handleApplicationTerminateNotification:(NSNotification *)terminateNotification;
 - (void) handleITunesNotification:(NSNotification *)iTunesNotification;
 - (void) setupITunesControllerWithPID:(pid_t)iTunesProcessID;
 

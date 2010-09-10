@@ -48,6 +48,10 @@
                             selector:@selector(handleApplicationStartupNotification:)
                                 name:NSWorkspaceDidLaunchApplicationNotification
                               object:nil];
+        [workspaceNotificationCenter addObserver:self
+                                        selector:@selector(handleApplicationTerminateNotification:)
+                                            name:NSWorkspaceDidTerminateApplicationNotification
+                                          object:nil];
     }
 }
 
@@ -118,10 +122,27 @@
 }
 
 
+- (void) handleApplicationTerminateNotification:(NSNotification *)terminateNotification
+{
+    NSString* terminatedApplicationIdentifier = [[terminateNotification userInfo] objectForKey: @"NSApplicationBundleIdentifier"];
+    if (NSOrderedSame == [terminatedApplicationIdentifier compare: @"com.apple.iTunes"])
+    {
+        [iTunesController tearDownITunesController];
+    }
+}
+
+
 - (void) handleITunesNotification:(NSNotification *)iTunesNotification
 {
-	//NSLog(@"iTunes Notification: %@\nuserInfo: %@", [iTunesNotification name], [iTunesNotification userInfo]);
-    [iTunesController updateControllerStatus];
+    NSString* playerState = [[iTunesNotification userInfo] objectForKey: @"Player State"];
+    
+    // if iTunes is quitting the dictionary contains only the "Player State" key
+    if (NSOrderedSame == [playerState compare: @"Stopped"] && 1 == [[iTunesNotification userInfo] count])
+    {
+        [iTunesController resetTrackInformation];
+    }
+    else
+        [iTunesController updateControllerStatus];
 }
 
 

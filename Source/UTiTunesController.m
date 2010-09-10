@@ -82,6 +82,13 @@
 }
 
 
+- (void) tearDownITunesController
+{
+	iTunes = nil;
+    [self resetTrackInformation];
+}
+
+
 - (void) resetTrackInformation
 {
     [self setTrack:@"Trackname" andArtist:@"Artistname"];
