@@ -76,6 +76,18 @@
 }
 
 
+- (pid_t) getITunesProcessID
+{
+    NSArray* runningApplications = [[NSWorkspace sharedWorkspace] launchedApplications];
+    for (int i = 0; i < [runningApplications count]; ++i) {
+        NSDictionary* currentApplication = [runningApplications objectAtIndex: i];
+        if (NSOrderedSame == [[currentApplication objectForKey: @"NSApplicationBundleIdentifier"] compare: @"com.apple.iTunes"])
+            return [[currentApplication objectForKey: @"NSApplicationProcessIdentifier"] intValue];
+    }
+    return -1;
+}
+
+
 - (void) handleITunesNotification:(NSNotification *)iTunesNotification
 {
 	//NSLog(@"iTunes Notification: %@\nuserInfo: %@", [iTunesNotification name], [iTunesNotification userInfo]);

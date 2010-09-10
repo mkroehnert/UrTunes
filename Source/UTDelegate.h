@@ -31,6 +31,7 @@
 - (void) createStatusMenu;
 - (IBAction) quitApplication:(id)sender;
 - (IBAction) showHideITunesControlPanel:(id)sender;
+- (pid_t) getITunesProcessID;
 - (void) handleITunesNotification:(NSNotification *)iTunesNotification;
 
 @end
