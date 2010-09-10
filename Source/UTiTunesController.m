@@ -92,7 +92,8 @@
 - (void) resetTrackInformation
 {
     [self setTrack:@"Trackname" andArtist:@"Artistname"];
-    // also reset albumart and rating
+    [albumArtView setImage: nil];
+    [trackRating setIntegerValue: 3];
 }
 
 
