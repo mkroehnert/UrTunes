@@ -33,6 +33,7 @@
 - (IBAction) showHideITunesControlPanel:(id)sender;
 - (pid_t) getITunesProcessID;
 - (void) registerForITunesNotifications;
+- (void) handleApplicationStartupNotification:(NSNotification *)startupNotification;
 - (void) handleITunesNotification:(NSNotification *)iTunesNotification;
 - (void) setupITunesControllerWithPID:(pid_t)iTunesProcessID;
 

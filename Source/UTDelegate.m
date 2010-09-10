@@ -43,7 +43,11 @@
     }
     else
     {
-    	
+        NSNotificationCenter* workspaceNotificationCenter = [[NSWorkspace sharedWorkspace] notificationCenter];
+        [workspaceNotificationCenter addObserver:self
+                            selector:@selector(handleApplicationStartupNotification:)
+                                name:NSWorkspaceDidLaunchApplicationNotification
+                              object:nil];
     }
 }
 
@@ -102,6 +106,16 @@
     [[NSDistributedNotificationCenter defaultCenter] addObserver:self selector:@selector(handleITunesNotification:) name:@"com.apple.iTunes.playerInfo" object:nil];
 }
 
+
+- (void) handleApplicationStartupNotification:(NSNotification *)startupNotification
+{
+    NSDictionary* startedApplication = [startupNotification userInfo];
+    if (NSOrderedSame == [[startedApplication objectForKey: @"NSApplicationBundleIdentifier"] compare: @"com.apple.iTunes"])
+    {
+        const pid_t iTunesProcessID = [[startedApplication objectForKey: @"NSApplicationProcessIdentifier"] intValue];
+        [self setupITunesControllerWithPID: iTunesProcessID];
+    }
+}
 
 
 - (void) handleITunesNotification:(NSNotification *)iTunesNotification
