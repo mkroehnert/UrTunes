@@ -27,6 +27,7 @@
     IBOutlet NSLevelIndicator* trackRating;
     IBOutlet NSButton* playPauseButton;
     IBOutlet NSMenuItem* playPauseMenuItem;
+    IBOutlet NSImageView* albumArtView;
 }
 
 - (IBAction) playPause:(id)sender;
@@ -41,6 +42,7 @@
 - (void) updateTrackInfo;
 - (void) setTrack:(NSString*) newTrackName andArtist:(NSString*) newArtistName;
 - (void) updateRating;
+- (void) updateAlbumArt;
 - (void) updateControllerStatus;
 
 @end

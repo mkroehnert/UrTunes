@@ -92,6 +92,7 @@
 - (void) resetTrackInformation
 {
     [self setTrack:@"Trackname" andArtist:@"Artistname"];
+    // also reset albumart and rating
 }
 
 
@@ -119,6 +120,16 @@
 	[trackRating setIntegerValue: [[iTunes currentTrack] albumRating]];
 }
 
+- (void) updateAlbumArt
+{
+    SBElementArray* artworks = [[iTunes currentTrack] artworks];
+    NSImage* artworkImage = nil;
+    if (0 < [artworks count])
+        artworkImage = [[artworks objectAtIndex: 0] data];
+	[albumArtView setImage: artworkImage];
+}
+
+
 - (void) updateControllerStatus
 {
     [self updateVolumeSliderPosition];
@@ -131,6 +142,7 @@
     [self updateTrackInfo];
     [self updateRating];
     [self updatePlayPauseTitle];
+    [self updateAlbumArt];
 }
 
 @end
