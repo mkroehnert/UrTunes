@@ -36,6 +36,7 @@
 - (void) handleApplicationStartupNotification:(NSNotification *)startupNotification;
 - (void) handleApplicationTerminateNotification:(NSNotification *)terminateNotification;
 - (void) handleITunesNotification:(NSNotification *)iTunesNotification;
+- (void) panelWillClose:(NSNotification*)notification;
 - (void) setupITunesControllerWithPID:(pid_t)iTunesProcessID;
 
 @end

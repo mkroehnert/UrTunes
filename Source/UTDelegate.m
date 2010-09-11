@@ -45,14 +45,18 @@
     {
         NSNotificationCenter* workspaceNotificationCenter = [[NSWorkspace sharedWorkspace] notificationCenter];
         [workspaceNotificationCenter addObserver:self
-                            selector:@selector(handleApplicationStartupNotification:)
-                                name:NSWorkspaceDidLaunchApplicationNotification
-                              object:nil];
+                                        selector:@selector(handleApplicationStartupNotification:)
+                                            name:NSWorkspaceDidLaunchApplicationNotification
+                                          object:nil];
         [workspaceNotificationCenter addObserver:self
                                         selector:@selector(handleApplicationTerminateNotification:)
                                             name:NSWorkspaceDidTerminateApplicationNotification
                                           object:nil];
     }
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(panelWillClose:)
+                                                 name:NSWindowWillCloseNotification
+                                               object:iTunesControlPanel];
 }
 
 
@@ -71,10 +75,12 @@
 //    [statusItem setAlternateImage: [NSImage imageNamed:@"statusBarIcon"]];
 }
 
+
 - (IBAction) quitApplication:(id)sender
 {
     [NSApp terminate:nil];
 }
+
 
 - (IBAction) showHideITunesControlPanel:(id)sender
 {
@@ -143,6 +149,12 @@
     }
     else
         [iTunesController updateControllerStatus];
+}
+
+
+- (void) panelWillClose:(NSNotification*)notification
+{
+	[self showHideITunesControlPanel: nil];
 }
 
 
