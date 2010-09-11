@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+   <channel>
+      <title>UrTunes Changelog</title>
+      <link>http://mkroehnert.github.com/UrTunes/UrTunesAppcast.xml</link>
+      <description>UrTunes Channel</description>
+      <language>en</language>
+
+      <item>
+        <title>Version 0.1</title>
+        <sparkle:releaseNotesLink>
+				http://mkroehnert.github.com/UrTunes/release-notes/0.1.html
+		</sparkle:releaseNotesLink>
+        <sparkle:minimumSystemVersion>10.5.8</sparkle:minimumSystemVersion>
+        <pubDate>Wed, 11 Sep 2010 14:00:00 +0001</pubDate>
+        <enclosure url="http://github.com/downloads/mkroehnert/UrTunes/UrTunes-0.1.tar.bz2"
+                   sparkle:version="0.1"
+                   length="443630"
+                   type="application/octet-stream"
+                   sparkle:dsaSignature="MC0CFB6S/kCBCzAyLe3opjaXMcf0cSJXAhUAmqj/bSqT+7BgVdgzRXGA7tmntQM=" />
+      </item>
+   </channel>
+</rss>
