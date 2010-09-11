@@ -9,8 +9,8 @@
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
 			<integer value="56"/>
-			<integer value="453"/>
 			<integer value="506"/>
+			<integer value="453"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -216,7 +216,7 @@
 				<int key="NSWindowStyleMask">8215</int>
 				<int key="NSWindowBacking">2</int>
 				<string key="NSWindowRect">{{1067, 723}, {230, 155}}</string>
-				<int key="NSWTFlags">603980800</int>
+				<int key="NSWTFlags">1677722624</int>
 				<string key="NSWindowTitle">UrTunes</string>
 				<string key="NSWindowClass">NSPanel</string>
 				<nil key="NSViewClass"/>
@@ -1248,8 +1248,8 @@
 					<string>{{6, 978}, {478, 20}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{329, 688}, {230, 155}}</string>
-					<string>{{329, 688}, {230, 155}}</string>
+					<string>{{328, 688}, {230, 155}}</string>
+					<string>{{328, 688}, {230, 155}}</string>
 					<boolean value="YES"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
