@@ -21,6 +21,7 @@
 
 @interface UTiTunesController : NSObject {
     iTunesApplication* iTunes;
+    NSInteger iTunesVolume;
     IBOutlet NSTextField* trackNameLabel;
     IBOutlet NSTextField* artistNameLabel;
     IBOutlet NSSlider* volumeSlider;

@@ -61,7 +61,8 @@
 {
     if (![iTunes isRunning])
         return;
-    [iTunes setSoundVolume: [volumeSlider integerValue]];
+    iTunesVolume = [volumeSlider integerValue];
+    [iTunes setSoundVolume: iTunesVolume];
 }
 
 
@@ -99,9 +100,10 @@
 
 - (void) updateVolumeSliderPosition
 {
-    if ([iTunes isRunning])
-        [volumeSlider setIntegerValue: [iTunes soundVolume]];
-
+    if (![iTunes isRunning])
+        return;
+    iTunesVolume = [iTunes soundVolume];
+    [volumeSlider setIntegerValue: iTunesVolume];
 }
 
 - (void) updateTrackInfo
