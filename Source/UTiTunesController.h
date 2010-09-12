@@ -23,6 +23,7 @@
     iTunesApplication* iTunes;
     NSInteger iTunesVolume;
     NSInteger iTunesTrackRating;
+    NSImage* iTunesAlbumArt;
     IBOutlet NSTextField* trackNameLabel;
     IBOutlet NSTextField* artistNameLabel;
     IBOutlet NSSlider* volumeSlider;

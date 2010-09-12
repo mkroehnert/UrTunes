@@ -131,10 +131,10 @@
 - (void) updateAlbumArt
 {
     SBElementArray* artworks = [[iTunes currentTrack] artworks];
-    NSImage* artworkImage = nil;
+    iTunesAlbumArt = nil;
     if (0 < [artworks count])
-        artworkImage = [[artworks objectAtIndex: 0] data];
-	[albumArtView setImage: artworkImage];
+        iTunesAlbumArt = (NSImage*)[[artworks objectAtIndex: 0] data];
+	[albumArtView setImage: iTunesAlbumArt];
 }
 
 
