@@ -108,6 +108,8 @@
 
 - (void) updateTrackInfo
 {
+    if (![iTunes isRunning])
+        return;
     [self setTrack: [[iTunes currentTrack] name] andArtist: [[iTunes currentTrack] artist]];
 }
 
@@ -120,7 +122,10 @@
 
 - (void) updateRating
 {
-	[trackRating setIntegerValue: [[iTunes currentTrack] albumRating]];
+    if (![iTunes isRunning])
+        return;
+    iTunesTrackRating = [[iTunes currentTrack] albumRating];
+	[trackRating setIntegerValue: iTunesTrackRating];
 }
 
 - (void) updateAlbumArt
