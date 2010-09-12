@@ -106,11 +106,14 @@
     [volumeSlider setIntegerValue: iTunesVolume];
 }
 
+
 - (void) updateTrackInfo
 {
     if (![iTunes isRunning])
         return;
-    [self setTrack: [[iTunes currentTrack] name] andArtist: [[iTunes currentTrack] artist]];
+    iTunesTrackName = [[iTunes currentTrack] name];
+    iTunesArtistName = [[iTunes currentTrack] artist];
+    [self setTrack: iTunesTrackName andArtist: iTunesArtistName];
 }
 
 
@@ -120,6 +123,7 @@
     [artistNameLabel setStringValue: newArtistName];
 }
 
+
 - (void) updateRating
 {
     if (![iTunes isRunning])
@@ -127,6 +131,7 @@
     iTunesTrackRating = [[iTunes currentTrack] albumRating];
 	[trackRating setIntegerValue: iTunesTrackRating];
 }
+
 
 - (void) updateAlbumArt
 {

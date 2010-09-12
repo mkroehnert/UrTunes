@@ -22,6 +22,8 @@
 @interface UTiTunesController : NSObject {
     iTunesApplication* iTunes;
     NSInteger iTunesVolume;
+    NSString* iTunesTrackName;
+    NSString* iTunesArtistName;
     NSInteger iTunesTrackRating;
     NSImage* iTunesAlbumArt;
     IBOutlet NSTextField* trackNameLabel;
