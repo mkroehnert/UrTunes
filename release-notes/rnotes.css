@@ -190,6 +190,22 @@ margin-top: 3px;
 	padding-bottom: -3px
 	}
 
+.red    {
+	background-color: #ffe6ed;
+	margin-top: -3px;
+	margin-bottom: -3px;
+	padding-top: -3px;
+	padding-bottom: -3px
+	}
+
+.green    {
+	background-color: #e6ffed;
+	margin-top: -3px;
+	margin-bottom: -3px;
+	padding-top: -3px;
+	padding-bottom: -3px
+	}
+
 .rightfloater
 {
     float: right;
