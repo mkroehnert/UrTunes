@@ -29,6 +29,7 @@
         iTunes = nil;
         playPauseString = @"Play";
         iTunesRunning = NO;
+        [self resetTrackInformation];
     }
 
     return self;
