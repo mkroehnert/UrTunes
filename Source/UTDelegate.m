@@ -102,16 +102,9 @@
 
 - (IBAction) showHideITunesControlPanel:(id)sender
 {
-	if ([iTunesControlPanel isVisible])
-    {
-        [iTunesControlPanel orderOut:sender];
-        [showHideMenuEntry setTitle: @"Show Controlpanel"];
-    }
-    else
-    {
-        [iTunesControlPanel orderFront:sender];
-        [showHideMenuEntry setTitle: @"Hide Controlpanel"];
-    }
+    BOOL panelVisible = ![iTunesControlPanel isVisible];
+    [self setControllerVisible: panelVisible];
+    [self setShowHideStringTo: panelVisible];
 }
 
 

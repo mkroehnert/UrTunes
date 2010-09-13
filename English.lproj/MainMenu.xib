@@ -8,9 +8,9 @@
 		<string key="IBDocument.HIToolboxVersion">353.00</string>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="56"/>
-			<integer value="512"/>
 			<integer value="453"/>
+			<integer value="491"/>
+			<integer value="56"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -665,14 +665,6 @@
 					<int key="connectionID">507</int>
 				</object>
 				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">showHideMenuEntry</string>
-						<reference key="source" ref="974179531"/>
-						<reference key="destination" ref="21666191"/>
-					</object>
-					<int key="connectionID">508</int>
-				</object>
-				<object class="IBConnectionRecord">
 					<object class="IBBindingConnection" key="connection">
 						<string key="label">value: iTunesTrackName</string>
 						<reference key="source" ref="485224136"/>
@@ -907,6 +899,38 @@
 						<reference key="destination" ref="1032481657"/>
 					</object>
 					<int key="connectionID">575</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBBindingConnection" key="connection">
+						<string key="label">visible: controllerVisible</string>
+						<reference key="source" ref="589478772"/>
+						<reference key="destination" ref="974179531"/>
+						<object class="NSNibBindingConnector" key="connector">
+							<reference key="NSSource" ref="589478772"/>
+							<reference key="NSDestination" ref="974179531"/>
+							<string key="NSLabel">visible: controllerVisible</string>
+							<string key="NSBinding">visible</string>
+							<string key="NSKeyPath">controllerVisible</string>
+							<int key="NSNibBindingConnectorVersion">2</int>
+						</object>
+					</object>
+					<int key="connectionID">580</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBBindingConnection" key="connection">
+						<string key="label">title: showHideString</string>
+						<reference key="source" ref="21666191"/>
+						<reference key="destination" ref="974179531"/>
+						<object class="NSNibBindingConnector" key="connector">
+							<reference key="NSSource" ref="21666191"/>
+							<reference key="NSDestination" ref="974179531"/>
+							<string key="NSLabel">title: showHideString</string>
+							<string key="NSBinding">title</string>
+							<string key="NSKeyPath">showHideString</string>
+							<int key="NSNibBindingConnectorVersion">2</int>
+						</object>
+					</object>
+					<int key="connectionID">584</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -1484,7 +1508,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">575</int>
+			<int key="maxID">584</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
