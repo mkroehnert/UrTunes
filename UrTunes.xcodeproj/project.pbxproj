@@ -16,6 +16,7 @@
 		4D38AC00122E4CDE001F4FFC /* UTDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D38ABFF122E4CDE001F4FFC /* UTDelegate.m */; };
 		4D38AC14122EB22A001F4FFC /* UTiTunesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D38AC13122EB22A001F4FFC /* UTiTunesController.m */; };
 		4D38AC33122EBEE5001F4FFC /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D38AC32122EBEE5001F4FFC /* ScriptingBridge.framework */; };
+		4D3A493F123E16F30035C9CC /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D3A493D123E16F30035C9CC /* Preferences.xib */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -53,6 +54,7 @@
 		4D38AE44122FF153001F4FFC /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		4D38AE45122FF153001F4FFC /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		4D38AEEC1231249F001F4FFC /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
+		4D3A493E123E16F30035C9CC /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/Preferences.xib; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* UrTunes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UrTunes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -130,6 +132,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4D3A493D123E16F30035C9CC /* Preferences.xib */,
 				4D09EF55123327BC00115E35 /* UrTunes-Icon.icns */,
 				4D09EF47123139F900115E35 /* sparkle-sign-key-pub.pem */,
 				4D38AEEC1231249F001F4FFC /* Credits.rtf */,
@@ -202,6 +205,7 @@
 				4D09EF071231273D00115E35 /* Credits.rtf in Resources */,
 				4D09EF48123139F900115E35 /* sparkle-sign-key-pub.pem in Resources */,
 				4D09EF56123327BC00115E35 /* UrTunes-Icon.icns in Resources */,
+				4D3A493F123E16F30035C9CC /* Preferences.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,6 +239,14 @@
 				1DDD58150DA1D0A300B32029 /* English */,
 			);
 			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		4D3A493D123E16F30035C9CC /* Preferences.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4D3A493E123E16F30035C9CC /* English */,
+			);
+			name = Preferences.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
