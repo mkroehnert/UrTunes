@@ -32,6 +32,7 @@
 
 - (void) setControllerVisible:(BOOL)newStatus;
 - (void) setShowHideString:(NSString*) newString;
+- (void) setShowHideStringTo:(BOOL)showPanel;
 - (void) createStatusMenu;
 - (IBAction) quitApplication:(id)sender;
 - (IBAction) showHideITunesControlPanel:(id)sender;

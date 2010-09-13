@@ -34,6 +34,17 @@
 }
 
 
+- (void) setShowHideStringTo:(BOOL)showPanel
+{
+    // if the panel is shown the entry must be named hide and the other way around
+    NSString* entryString = @"Show Controlpanel";
+	if (showPanel)
+        entryString = @"Hide Controlpanel";
+
+    [self setShowHideString: entryString];
+}
+
+
 - (void) applicationWillFinishLaunching:(NSNotification *)notification
 {
     [self createStatusMenu];
