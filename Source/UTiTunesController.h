@@ -35,10 +35,18 @@
     IBOutlet NSImageView* albumArtView;
 }
 
+// KVC methods
+- (void) setITunesVolume:(NSInteger)newVolume;
+- (void) setITunesTrackName:(NSString*)newTrackName;
+- (void) setITunesArtistName:(NSString*)newArtistName;
+- (void) setITunesTrackRating:(NSInteger)newRating;
+- (void) setITunesAlbumArt:(NSImage*)newAlbumArt;
+// IBActions
 - (IBAction) playPause:(id)sender;
 - (IBAction) previousTrack:(id)sender;
 - (IBAction) nextTrack:(id)sender;
 - (IBAction) setNewITunesVolume:(id)sender;
+//
 - (void) createITunesControllerWithPID:(pid_t)pid;
 - (void) tearDownITunesController;
 - (void) resetTrackInformation;

@@ -31,6 +31,39 @@
 }
 
 
+- (void) setITunesVolume:(NSInteger)newVolume
+{
+	iTunesVolume = newVolume;
+}
+
+
+- (void) setITunesTrackName:(NSString*)newTrackName
+{
+	[iTunesTrackName autorelease];
+    iTunesTrackName = [newTrackName retain];
+}
+
+
+- (void) setITunesArtistName:(NSString*)newArtistName
+{
+	[iTunesArtistName autorelease];
+    iTunesArtistName = [newArtistName retain];
+}
+
+
+- (void) setITunesTrackRating:(NSInteger)newRating
+{
+    iTunesTrackRating = newRating;
+}
+
+
+- (void) setITunesAlbumArt:(NSImage*)newAlbumArt
+{
+	[iTunesAlbumArt autorelease];
+    iTunesAlbumArt = [newAlbumArt copy];
+}
+
+
 - (IBAction) playPause:(id)sender
 {
     if (![iTunes isRunning])
