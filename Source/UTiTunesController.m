@@ -28,6 +28,7 @@
     {
         iTunes = nil;
         playPauseString = @"Play";
+        iTunesRunning = NO;
     }
 
     return self;
@@ -74,9 +75,9 @@
 }
 
 
-- (BOOL) isITunesRunnig
+- (void) setITunesRunning:(BOOL)newState
 {
-	return (nil != iTunes);
+	iTunesRunning = newState;
 }
 
 
@@ -126,6 +127,7 @@
 - (void) createITunesControllerWithPID:(pid_t)pid
 {
 	iTunes = [SBApplication applicationWithProcessIdentifier: pid];
+    [self setITunesRunning:YES];
 }
 
 
@@ -133,6 +135,7 @@
 {
 	iTunes = nil;
     [self resetTrackInformation];
+    [self setITunesRunning:NO];
 }
 
 

@@ -27,6 +27,7 @@
     NSInteger iTunesTrackRating;
     NSImage* iTunesAlbumArt;
     NSString* playPauseString;
+    BOOL iTunesRunning;
 }
 
 // KVC methods
@@ -36,7 +37,7 @@
 - (void) setITunesTrackRating:(NSInteger)newRating;
 - (void) setITunesAlbumArt:(NSImage*)newAlbumArt;
 - (void) setPlayPauseString:(NSString*)newString;
-- (BOOL) isITunesRunnig;
+- (void) setITunesRunning:(BOOL)newState;
 // IBActions
 - (IBAction) playPause:(id)sender;
 - (IBAction) previousTrack:(id)sender;
