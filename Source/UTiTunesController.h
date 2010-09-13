@@ -33,6 +33,7 @@
     IBOutlet NSButton* playPauseButton;
     IBOutlet NSMenuItem* playPauseMenuItem;
     IBOutlet NSImageView* albumArtView;
+    NSString* playPauseString;
 }
 
 // KVC methods
@@ -41,6 +42,7 @@
 - (void) setITunesArtistName:(NSString*)newArtistName;
 - (void) setITunesTrackRating:(NSInteger)newRating;
 - (void) setITunesAlbumArt:(NSImage*)newAlbumArt;
+- (void) setPlayPauseString:(NSString*)newString;
 // IBActions
 - (IBAction) playPause:(id)sender;
 - (IBAction) previousTrack:(id)sender;

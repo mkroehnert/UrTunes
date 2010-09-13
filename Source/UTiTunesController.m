@@ -25,7 +25,10 @@
 {
     self = [super init];
     if (self)
+    {
         iTunes = nil;
+        playPauseString = @"Play";
+    }
 
     return self;
 }
@@ -61,6 +64,13 @@
 {
 	[iTunesAlbumArt autorelease];
     iTunesAlbumArt = [newAlbumArt copy];
+}
+
+
+- (void) setPlayPauseString:(NSString*)newString
+{
+	[playPauseString autorelease];
+    playPauseString = [newString retain];
 }
 
 
