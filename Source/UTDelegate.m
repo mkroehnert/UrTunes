@@ -21,6 +21,14 @@
 
 @implementation UTDelegate
 
++ (void) initialize
+{
+    NSDictionary* initialValuesDict = [NSDictionary dictionaryWithObject: [NSNumber numberWithBool:YES] forKey: @"showPanelOnStartup"];
+    // Set the initial values
+    [[NSUserDefaults standardUserDefaults] registerDefaults:initialValuesDict];
+}
+
+
 - (void) setControllerVisible:(BOOL)newStatus
 {
 	controllerVisible = newStatus;
