@@ -74,6 +74,12 @@
 }
 
 
+- (BOOL) isITunesRunnig
+{
+	return (nil != iTunes);
+}
+
+
 - (IBAction) playPause:(id)sender
 {
     if (![iTunes isRunning])

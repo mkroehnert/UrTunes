@@ -43,6 +43,7 @@
 - (void) setITunesTrackRating:(NSInteger)newRating;
 - (void) setITunesAlbumArt:(NSImage*)newAlbumArt;
 - (void) setPlayPauseString:(NSString*)newString;
+- (BOOL) isITunesRunnig;
 // IBActions
 - (IBAction) playPause:(id)sender;
 - (IBAction) previousTrack:(id)sender;
