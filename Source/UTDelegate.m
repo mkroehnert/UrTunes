@@ -27,6 +27,13 @@
 }
 
 
+- (void) setShowHideString:(NSString*) newString
+{
+	[showHideString autorelease];
+    showHideString = [newString retain];
+}
+
+
 - (void) applicationWillFinishLaunching:(NSNotification *)notification
 {
     [self createStatusMenu];
