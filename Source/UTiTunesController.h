@@ -26,13 +26,6 @@
     NSString* iTunesArtistName;
     NSInteger iTunesTrackRating;
     NSImage* iTunesAlbumArt;
-    IBOutlet NSTextField* trackNameLabel;
-    IBOutlet NSTextField* artistNameLabel;
-    IBOutlet NSSlider* volumeSlider;
-    IBOutlet NSLevelIndicator* trackRating;
-    IBOutlet NSButton* playPauseButton;
-    IBOutlet NSMenuItem* playPauseMenuItem;
-    IBOutlet NSImageView* albumArtView;
     NSString* playPauseString;
 }
 
@@ -54,10 +47,6 @@
 - (void) tearDownITunesController;
 - (void) resetTrackInformation;
 - (void) updatePlayPauseTitle;
-- (void) updateVolumeSliderPosition;
-- (void) updateTrackInfo;
-- (void) setTrack:(NSString*) newTrackName andArtist:(NSString*) newArtistName;
-- (void) updateRating;
 - (void) updateAlbumArt;
 - (void) updateControllerStatus;
 

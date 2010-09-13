@@ -9,8 +9,8 @@
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
 			<integer value="56"/>
-			<integer value="506"/>
 			<integer value="453"/>
+			<integer value="492"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -552,22 +552,6 @@
 					<int key="connectionID">449</int>
 				</object>
 				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">trackNameLabel</string>
-						<reference key="source" ref="1015550691"/>
-						<reference key="destination" ref="485224136"/>
-					</object>
-					<int key="connectionID">478</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">artistNameLabel</string>
-						<reference key="source" ref="1015550691"/>
-						<reference key="destination" ref="1043963557"/>
-					</object>
-					<int key="connectionID">479</int>
-				</object>
-				<object class="IBConnectionRecord">
 					<object class="IBActionConnection" key="connection">
 						<string key="label">previousTrack:</string>
 						<reference key="source" ref="1015550691"/>
@@ -590,22 +574,6 @@
 						<reference key="destination" ref="404002629"/>
 					</object>
 					<int key="connectionID">482</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">volumeSlider</string>
-						<reference key="source" ref="1015550691"/>
-						<reference key="destination" ref="1060583866"/>
-					</object>
-					<int key="connectionID">484</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">trackRating</string>
-						<reference key="source" ref="1015550691"/>
-						<reference key="destination" ref="856356775"/>
-					</object>
-					<int key="connectionID">485</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBActionConnection" key="connection">
@@ -704,22 +672,6 @@
 					<int key="connectionID">508</int>
 				</object>
 				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">playPauseMenuItem</string>
-						<reference key="source" ref="1015550691"/>
-						<reference key="destination" ref="868782896"/>
-					</object>
-					<int key="connectionID">509</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">playPauseButton</string>
-						<reference key="source" ref="1015550691"/>
-						<reference key="destination" ref="432669123"/>
-					</object>
-					<int key="connectionID">510</int>
-				</object>
-				<object class="IBConnectionRecord">
 					<object class="IBActionConnection" key="connection">
 						<string key="label">checkForUpdates:</string>
 						<reference key="source" ref="515540137"/>
@@ -728,12 +680,120 @@
 					<int key="connectionID">513</int>
 				</object>
 				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">albumArtView</string>
-						<reference key="source" ref="1015550691"/>
-						<reference key="destination" ref="588376304"/>
+					<object class="IBBindingConnection" key="connection">
+						<string key="label">value: iTunesTrackName</string>
+						<reference key="source" ref="485224136"/>
+						<reference key="destination" ref="1015550691"/>
+						<object class="NSNibBindingConnector" key="connector">
+							<reference key="NSSource" ref="485224136"/>
+							<reference key="NSDestination" ref="1015550691"/>
+							<string key="NSLabel">value: iTunesTrackName</string>
+							<string key="NSBinding">value</string>
+							<string key="NSKeyPath">iTunesTrackName</string>
+							<int key="NSNibBindingConnectorVersion">2</int>
+						</object>
 					</object>
-					<int key="connectionID">516</int>
+					<int key="connectionID">543</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBBindingConnection" key="connection">
+						<string key="label">value: iTunesArtistName</string>
+						<reference key="source" ref="1043963557"/>
+						<reference key="destination" ref="1015550691"/>
+						<object class="NSNibBindingConnector" key="connector">
+							<reference key="NSSource" ref="1043963557"/>
+							<reference key="NSDestination" ref="1015550691"/>
+							<string key="NSLabel">value: iTunesArtistName</string>
+							<string key="NSBinding">value</string>
+							<string key="NSKeyPath">iTunesArtistName</string>
+							<int key="NSNibBindingConnectorVersion">2</int>
+						</object>
+					</object>
+					<int key="connectionID">545</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBBindingConnection" key="connection">
+						<string key="label">value: iTunesTrackRating</string>
+						<reference key="source" ref="856356775"/>
+						<reference key="destination" ref="1015550691"/>
+						<object class="NSNibBindingConnector" key="connector">
+							<reference key="NSSource" ref="856356775"/>
+							<reference key="NSDestination" ref="1015550691"/>
+							<string key="NSLabel">value: iTunesTrackRating</string>
+							<string key="NSBinding">value</string>
+							<string key="NSKeyPath">iTunesTrackRating</string>
+							<object class="NSDictionary" key="NSOptions">
+								<string key="NS.key.0">NSAllowsEditingMultipleValuesSelection</string>
+								<boolean value="NO" key="NS.object.0"/>
+							</object>
+							<int key="NSNibBindingConnectorVersion">2</int>
+						</object>
+					</object>
+					<int key="connectionID">547</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBBindingConnection" key="connection">
+						<string key="label">value: iTunesAlbumArt</string>
+						<reference key="source" ref="588376304"/>
+						<reference key="destination" ref="1015550691"/>
+						<object class="NSNibBindingConnector" key="connector">
+							<reference key="NSSource" ref="588376304"/>
+							<reference key="NSDestination" ref="1015550691"/>
+							<string key="NSLabel">value: iTunesAlbumArt</string>
+							<string key="NSBinding">value</string>
+							<string key="NSKeyPath">iTunesAlbumArt</string>
+							<int key="NSNibBindingConnectorVersion">2</int>
+						</object>
+					</object>
+					<int key="connectionID">549</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBBindingConnection" key="connection">
+						<string key="label">value: iTunesVolume</string>
+						<reference key="source" ref="1060583866"/>
+						<reference key="destination" ref="1015550691"/>
+						<object class="NSNibBindingConnector" key="connector">
+							<reference key="NSSource" ref="1060583866"/>
+							<reference key="NSDestination" ref="1015550691"/>
+							<string key="NSLabel">value: iTunesVolume</string>
+							<string key="NSBinding">value</string>
+							<string key="NSKeyPath">iTunesVolume</string>
+							<int key="NSNibBindingConnectorVersion">2</int>
+						</object>
+					</object>
+					<int key="connectionID">551</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBBindingConnection" key="connection">
+						<string key="label">title: playPauseString</string>
+						<reference key="source" ref="432669123"/>
+						<reference key="destination" ref="1015550691"/>
+						<object class="NSNibBindingConnector" key="connector">
+							<reference key="NSSource" ref="432669123"/>
+							<reference key="NSDestination" ref="1015550691"/>
+							<string key="NSLabel">title: playPauseString</string>
+							<string key="NSBinding">title</string>
+							<string key="NSKeyPath">playPauseString</string>
+							<int key="NSNibBindingConnectorVersion">2</int>
+						</object>
+					</object>
+					<int key="connectionID">553</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBBindingConnection" key="connection">
+						<string key="label">title: playPauseString</string>
+						<reference key="source" ref="868782896"/>
+						<reference key="destination" ref="1015550691"/>
+						<object class="NSNibBindingConnector" key="connector">
+							<reference key="NSSource" ref="868782896"/>
+							<reference key="NSDestination" ref="1015550691"/>
+							<string key="NSLabel">title: playPauseString</string>
+							<string key="NSBinding">title</string>
+							<string key="NSKeyPath">playPauseString</string>
+							<int key="NSNibBindingConnectorVersion">2</int>
+						</object>
+					</object>
+					<int key="connectionID">555</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -923,10 +983,10 @@
 							<reference ref="432669123"/>
 							<reference ref="404002629"/>
 							<reference ref="994715549"/>
-							<reference ref="1060583866"/>
 							<reference ref="588376304"/>
 							<reference ref="485224136"/>
 							<reference ref="856356775"/>
+							<reference ref="1060583866"/>
 						</object>
 						<reference key="parent" ref="589478772"/>
 					</object>
@@ -1311,7 +1371,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">516</int>
+			<int key="maxID">557</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -1372,29 +1432,6 @@
 							<string>id</string>
 							<string>id</string>
 							<string>id</string>
-						</object>
-					</object>
-					<object class="NSMutableDictionary" key="outlets">
-						<bool key="EncodedWithXMLCoder">YES</bool>
-						<object class="NSMutableArray" key="dict.sortedKeys">
-							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>albumArtView</string>
-							<string>artistNameLabel</string>
-							<string>playPauseButton</string>
-							<string>playPauseMenuItem</string>
-							<string>trackNameLabel</string>
-							<string>trackRating</string>
-							<string>volumeSlider</string>
-						</object>
-						<object class="NSMutableArray" key="dict.values">
-							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>NSImageView</string>
-							<string>NSTextField</string>
-							<string>NSButton</string>
-							<string>NSMenuItem</string>
-							<string>NSTextField</string>
-							<string>NSLevelIndicator</string>
-							<string>NSSlider</string>
 						</object>
 					</object>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">

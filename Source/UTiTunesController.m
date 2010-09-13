@@ -110,19 +110,16 @@
 {
     if (![iTunes isRunning])
         return;
-    iTunesVolume = [volumeSlider integerValue];
     [iTunes setSoundVolume: iTunesVolume];
 }
 
 
 - (void) updatePlayPauseTitle
 {
-    NSString* titleString = @"Play";
     if (iTunesEPlSPlaying == [iTunes playerState])
-        titleString = @"Pause";
-    
-    [playPauseMenuItem setTitle: titleString];
-    [playPauseButton setTitle: titleString];
+        [self setPlayPauseString: @"Pause"];
+    else
+        [self setPlayPauseString: @"Play"];
 }
 
 
@@ -141,68 +138,42 @@
 
 - (void) resetTrackInformation
 {
-    [self setTrack:@"Trackname" andArtist:@"Artistname"];
-    [albumArtView setImage: nil];
-    [trackRating setIntegerValue: 3];
-}
-
-
-- (void) updateVolumeSliderPosition
-{
-    if (![iTunes isRunning])
-        return;
-    iTunesVolume = [iTunes soundVolume];
-    [volumeSlider setIntegerValue: iTunesVolume];
-}
-
-
-- (void) updateTrackInfo
-{
-    if (![iTunes isRunning])
-        return;
-    iTunesTrackName = [[iTunes currentTrack] name];
-    iTunesArtistName = [[iTunes currentTrack] artist];
-    [self setTrack: iTunesTrackName andArtist: iTunesArtistName];
-}
-
-
-- (void) setTrack:(NSString*) newTrackName andArtist:(NSString*) newArtistName
-{
-	[trackNameLabel setStringValue: newTrackName];
-    [artistNameLabel setStringValue: newArtistName];
-}
-
-
-- (void) updateRating
-{
-    if (![iTunes isRunning])
-        return;
-    iTunesTrackRating = [[iTunes currentTrack] albumRating];
-	[trackRating setIntegerValue: iTunesTrackRating];
+    [self setITunesTrackName: @"Trackname"];
+    [self setITunesArtistName:@"Artistname"];
+    [self setITunesAlbumArt:nil];
+    [self setITunesTrackRating: 3];
 }
 
 
 - (void) updateAlbumArt
 {
+    if (![iTunes isRunning])
+        return;
+
     SBElementArray* artworks = [[iTunes currentTrack] artworks];
-    iTunesAlbumArt = nil;
-    if (0 < [artworks count])
-        iTunesAlbumArt = (NSImage*)[[artworks objectAtIndex: 0] data];
-	[albumArtView setImage: iTunesAlbumArt];
+    NSImage* newAlbumArt = (0 >= [artworks count]) ? nil : (NSImage*)[[artworks objectAtIndex: 0] data];
+    [self setITunesAlbumArt: newAlbumArt];
 }
 
 
 - (void) updateControllerStatus
 {
-    [self updateVolumeSliderPosition];
+    if (![iTunes isRunning])
+        return;
+
+    [self setITunesVolume: [iTunes soundVolume]];
+    
     // omit apple script error if no track is currently selected
     if (![[iTunes currentTrack] exists])
     {
         [self resetTrackInformation];
         return;
     }
-    [self updateTrackInfo];
-    [self updateRating];
+    [self setITunesTrackName: [[iTunes currentTrack] name]];
+    [self setITunesArtistName:[[iTunes currentTrack] artist]];
+    // returned rating is between 0 and 100, the method expects values between 0 and 5
+    [self setITunesTrackRating: ([[iTunes currentTrack] albumRating] / 20)];
+
     [self updatePlayPauseTitle];
     [self updateAlbumArt];
 }
