@@ -97,6 +97,13 @@
 }
 
 
+- (IBAction) showPreferences:(id)sender
+{
+	if (![NSBundle loadNibNamed:@"Preferences" owner:self])
+        NSLog(@"Error loading preferences");
+}
+
+
 - (pid_t) getITunesProcessID
 {
     NSArray* runningApplications = [[NSWorkspace sharedWorkspace] launchedApplications];
