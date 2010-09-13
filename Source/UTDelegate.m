@@ -47,8 +47,12 @@
 
 - (void) applicationWillFinishLaunching:(NSNotification *)notification
 {
+    BOOL panelVisible = [[NSUserDefaults standardUserDefaults] boolForKey:@"showPanelOnStartup"];
+    [self setControllerVisible: panelVisible];
+    [self setShowHideStringTo: panelVisible];
     [self createStatusMenu];
 }
+
 
 -(void) applicationDidFinishLaunching:(NSNotification *)aNotification
 {
