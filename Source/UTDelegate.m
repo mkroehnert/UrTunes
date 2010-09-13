@@ -21,6 +21,12 @@
 
 @implementation UTDelegate
 
+- (void) setControllerVisible:(BOOL)newStatus
+{
+	controllerVisible = newStatus;
+}
+
+
 - (void) applicationWillFinishLaunching:(NSNotification *)notification
 {
     [self createStatusMenu];

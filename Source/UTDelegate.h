@@ -26,8 +26,10 @@
     IBOutlet NSMenuItem* showHideMenuEntry;
     IBOutlet NSPanel* iTunesControlPanel;
     IBOutlet UTiTunesController* iTunesController;
+    BOOL controllerVisible;
 }
 
+- (void) setControllerVisible:(BOOL)newStatus;
 - (void) createStatusMenu;
 - (IBAction) quitApplication:(id)sender;
 - (IBAction) showHideITunesControlPanel:(id)sender;
