@@ -420,7 +420,7 @@
 					<bool key="EncodedWithXMLCoder">YES</bool>
 					<object class="NSMenuItem" id="868782896">
 						<reference key="NSMenu" ref="124948560"/>
-						<string key="NSTitle">Play/Pause</string>
+						<string key="NSTitle">Play</string>
 						<string key="NSKeyEquiv"/>
 						<int key="NSMnemonicLoc">2147483647</int>
 						<reference key="NSOnImage" ref="35465992"/>
