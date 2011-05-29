@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
+		4D0336B2139271F6007C39F1 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D0336B1139271F6007C39F1 /* Carbon.framework */; };
 		4D09EF071231273D00115E35 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 4D38AEEC1231249F001F4FFC /* Credits.rtf */; };
 		4D09EF361231322600115E35 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D09EF351231322600115E35 /* Sparkle.framework */; };
 		4D09EF3C123132F100115E35 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4D09EF351231322600115E35 /* Sparkle.framework */; };
@@ -42,6 +43,7 @@
 		1DDD58150DA1D0A300B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* UrTunes_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UrTunes_Prefix.pch; sourceTree = "<group>"; };
+		4D0336B1139271F6007C39F1 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
 		4D09EF351231322600115E35 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = Frameworks/Sparkle.framework; sourceTree = "<group>"; };
 		4D09EF47123139F900115E35 /* sparkle-sign-key-pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "sparkle-sign-key-pub.pem"; sourceTree = "<group>"; };
 		4D09EF55123327BC00115E35 /* UrTunes-Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = "UrTunes-Icon.icns"; path = "Resources/UrTunes-Icon.icns"; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 				4D38AC33122EBEE5001F4FFC /* ScriptingBridge.framework in Frameworks */,
 				4D09EF361231322600115E35 /* Sparkle.framework in Frameworks */,
+				4D0336B2139271F6007C39F1 /* Carbon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +91,7 @@
 		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4D0336B1139271F6007C39F1 /* Carbon.framework */,
 				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
 			);
 			name = "Linked Frameworks";
