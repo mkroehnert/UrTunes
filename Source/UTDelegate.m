@@ -53,6 +53,37 @@
 }
 
 
+-(void) awakeFromNib
+{
+    EventHotKeyRef globalHotkeyRef;
+    EventHotKeyID globalHotkeyID;
+    EventTypeSpec eventType;
+    eventType.eventClass = kEventClassKeyboard;
+    eventType.eventKind = kEventHotKeyPressed;
+    
+    InstallApplicationEventHandler(&UrTunesHotkeyHandler, 1, &eventType, iTunesController, NULL);
+    
+    globalHotkeyID.signature = 'play';
+    globalHotkeyID.id = 1;
+    
+    UInt32 spacebarRefNumber = 49;
+    UInt32 rightArrowRefNumber = 124;
+    UInt32 leftArrowRefNumber = 123;
+    UInt32 modifierKeymask = cmdKey | controlKey;
+    
+    RegisterEventHotKey(spacebarRefNumber, modifierKeymask, globalHotkeyID,
+                        GetApplicationEventTarget(), 0, &globalHotkeyRef);
+    globalHotkeyID.signature = 'next';
+    globalHotkeyID.id = 2;
+    RegisterEventHotKey(rightArrowRefNumber, modifierKeymask, globalHotkeyID,
+                        GetApplicationEventTarget(), 0, &globalHotkeyRef);
+    globalHotkeyID.signature = 'prev';
+    globalHotkeyID.id = 3;
+    RegisterEventHotKey(leftArrowRefNumber, modifierKeymask, globalHotkeyID,
+                        GetApplicationEventTarget(), 0, &globalHotkeyRef);
+}
+
+
 - (void) applicationWillFinishLaunching:(NSNotification *)notification
 {
     BOOL panelVisible = [[NSUserDefaults standardUserDefaults] boolForKey:@"showPanelOnStartup"];
@@ -196,3 +227,29 @@
 }
 
 @end
+
+OSStatus UrTunesHotkeyHandler(EventHandlerCallRef nextHandler, EventRef theEvent, void* userData)
+{
+    if (NULL == userData)
+        return noErr;
+
+    UTiTunesController* controller = (UTiTunesController*) userData;
+
+    EventHotKeyID hotkeyID;
+    GetEventParameter(theEvent, kEventParamDirectObject, typeEventHotKeyID, NULL,
+                      sizeof(hotkeyID), NULL, &hotkeyID);
+    UInt32 selectedKey = hotkeyID.id;
+
+    switch (selectedKey) {
+        case 1:
+            [controller playPause: nil];
+            break;
+        case 2:
+            [controller nextTrack: nil];
+            break;
+        case 3:
+            [controller previousTrack: nil];
+            break;
+    }
+    return noErr;
+}

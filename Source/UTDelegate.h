@@ -16,6 +16,7 @@
  */
 
 #import <Cocoa/Cocoa.h>
+#import <Carbon/Carbon.h>
 
 @class UTiTunesController;
 
@@ -45,3 +46,5 @@
 - (void) setupITunesControllerWithPID:(pid_t)iTunesProcessID;
 
 @end
+
+OSStatus UrTunesHotkeyHandler(EventHandlerCallRef nextHandler, EventRef theEvent, void* userData);
