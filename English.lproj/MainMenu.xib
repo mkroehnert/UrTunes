@@ -8,9 +8,9 @@
 		<string key="IBDocument.HIToolboxVersion">353.00</string>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="453"/>
-			<integer value="491"/>
 			<integer value="56"/>
+			<integer value="453"/>
+			<integer value="494"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -422,7 +422,8 @@
 					<object class="NSMenuItem" id="868782896">
 						<reference key="NSMenu" ref="124948560"/>
 						<string key="NSTitle">Play</string>
-						<string key="NSKeyEquiv"/>
+						<string key="NSKeyEquiv"> </string>
+						<int key="NSKeyEquivModMask">1310720</int>
 						<int key="NSMnemonicLoc">2147483647</int>
 						<reference key="NSOnImage" ref="35465992"/>
 						<reference key="NSMixedImage" ref="502551668"/>
@@ -430,7 +431,8 @@
 					<object class="NSMenuItem" id="723549979">
 						<reference key="NSMenu" ref="124948560"/>
 						<string key="NSTitle">Next Track</string>
-						<string key="NSKeyEquiv"/>
+						<string type="base64-UTF8" key="NSKeyEquiv">75yDA</string>
+						<int key="NSKeyEquivModMask">1310720</int>
 						<int key="NSMnemonicLoc">2147483647</int>
 						<reference key="NSOnImage" ref="35465992"/>
 						<reference key="NSMixedImage" ref="502551668"/>
@@ -438,7 +440,8 @@
 					<object class="NSMenuItem" id="842140157">
 						<reference key="NSMenu" ref="124948560"/>
 						<string key="NSTitle">Previous Track</string>
-						<string key="NSKeyEquiv"/>
+						<string type="base64-UTF8" key="NSKeyEquiv">75yCA</string>
+						<int key="NSKeyEquivModMask">1310720</int>
 						<int key="NSMnemonicLoc">2147483647</int>
 						<reference key="NSOnImage" ref="35465992"/>
 						<reference key="NSMixedImage" ref="502551668"/>
@@ -1464,7 +1467,7 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{360, 363}, {178, 163}}</string>
+					<string>{{360, 363}, {220, 163}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -1537,14 +1540,12 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>iTunesControlPanel</string>
 							<string>iTunesController</string>
-							<string>showHideMenuEntry</string>
 							<string>statusBarMenu</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>NSPanel</string>
 							<string>UTiTunesController</string>
-							<string>NSMenuItem</string>
 							<string>NSMenu</string>
 						</object>
 					</object>
