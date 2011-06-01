@@ -20,6 +20,12 @@
 
 @class UTiTunesController;
 
+typedef enum {
+    UT_PLAY = 1,
+    UT_NEXT = 2,
+    UT_PREV = 3
+} UTHotkey;
+
 @interface UTDelegate : NSObject
 {
     NSStatusItem* statusItem;

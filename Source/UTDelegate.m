@@ -62,23 +62,22 @@
     eventType.eventKind = kEventHotKeyPressed;
     
     InstallApplicationEventHandler(&UrTunesHotkeyHandler, 1, &eventType, iTunesController, NULL);
-    
-    globalHotkeyID.signature = 'play';
-    globalHotkeyID.id = 1;
-    
+        
     UInt32 spacebarRefNumber = 49;
     UInt32 rightArrowRefNumber = 124;
     UInt32 leftArrowRefNumber = 123;
     UInt32 modifierKeymask = cmdKey | controlKey;
     
+    globalHotkeyID.signature = 'play';
+    globalHotkeyID.id = UT_PLAY;
     RegisterEventHotKey(spacebarRefNumber, modifierKeymask, globalHotkeyID,
                         GetApplicationEventTarget(), 0, &globalHotkeyRef);
     globalHotkeyID.signature = 'next';
-    globalHotkeyID.id = 2;
+    globalHotkeyID.id = UT_NEXT;
     RegisterEventHotKey(rightArrowRefNumber, modifierKeymask, globalHotkeyID,
                         GetApplicationEventTarget(), 0, &globalHotkeyRef);
     globalHotkeyID.signature = 'prev';
-    globalHotkeyID.id = 3;
+    globalHotkeyID.id = UT_PREV;
     RegisterEventHotKey(leftArrowRefNumber, modifierKeymask, globalHotkeyID,
                         GetApplicationEventTarget(), 0, &globalHotkeyRef);
 }
@@ -241,13 +240,13 @@ OSStatus UrTunesHotkeyHandler(EventHandlerCallRef nextHandler, EventRef theEvent
     UInt32 selectedKey = hotkeyID.id;
 
     switch (selectedKey) {
-        case 1:
+        case UT_PLAY:
             [controller playPause: nil];
             break;
-        case 2:
+        case UT_NEXT:
             [controller nextTrack: nil];
             break;
-        case 3:
+        case UT_PREV:
             [controller previousTrack: nil];
             break;
     }
