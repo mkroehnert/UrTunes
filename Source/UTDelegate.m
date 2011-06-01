@@ -157,6 +157,12 @@
 }
 
 
+- (IBAction) reportBug:(id)sender
+{
+    [[NSWorkspace sharedWorkspace] openURL: [NSURL URLWithString:@"https://github.com/mkroehnert/UrTunes/issues"]];
+}
+
+
 - (pid_t) getITunesProcessID
 {
     NSArray* runningApplications = [[NSWorkspace sharedWorkspace] launchedApplications];

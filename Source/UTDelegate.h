@@ -43,6 +43,7 @@ typedef enum {
 - (IBAction) quitApplication:(id)sender;
 - (IBAction) showHideITunesControlPanel:(id)sender;
 - (IBAction) showPreferences:(id)sender;
+- (IBAction) reportBug:(id)sender;
 - (pid_t) getITunesProcessID;
 - (void) registerForITunesNotifications;
 - (void) handleApplicationStartupNotification:(NSNotification *)startupNotification;
