@@ -6,6 +6,7 @@
       <description>UrTunes Channel</description>
       <language>en</language>
 
+<!-- v0.1 -->
       <item>
         <title>Version 0.1</title>
         <sparkle:releaseNotesLink>
@@ -20,6 +21,7 @@
                    sparkle:dsaSignature="MC0CFB6S/kCBCzAyLe3opjaXMcf0cSJXAhUAmqj/bSqT+7BgVdgzRXGA7tmntQM=" />
       </item>
 
+<!-- v0.2 -->
       <item>
         <title>Version 0.2</title>
         <sparkle:releaseNotesLink>
@@ -33,5 +35,6 @@
                    type="application/octet-stream"
                    sparkle:dsaSignature="MC0CFQCD3h6FbpqNUZWJx9vzcVxcTalufAIUeg+yYafNCS93D2oxOdWU/lYUbLE=" />
       </item>
+<!-- v0.3 -->
    </channel>
 </rss>
