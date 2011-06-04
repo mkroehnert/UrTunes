@@ -1,7 +1,10 @@
 ABOUT
 -----
 
-UrTunes is a small application which can controll iTunes.
+UrTunes is a small application which can control iTunes
+through a menu bar icon, a floating panel, or global
+hotkeys.
+
 It was started as a learning experience and because the
 TotalTunesControl developers cut off the free version of their
 program.
@@ -22,7 +25,8 @@ FEATURES
 REQUIREMENTS
 ------------
 
-Comupter running Mac OS X >= 10.5 with Xcode installed.
+Computer running Mac OS X >= 10.5 is neede to run provided UrTunes binaries.
+Xcode must be installed if you want to build UrTunes from source.
 
 
 LICENSE
@@ -34,20 +38,25 @@ UrTunes is licensed under GPLv3 or later (see LICENSE.txt).
 DOWNLOADING
 -----------
 
-UrTunes can be downloaded from its Github page:
+UrTunes can be downloaded from its GitHub page:
 
-http://github.com/mkroehnert/UrTunes
+https://github.com/mkroehnert/UrTunes/downloads
 
 
 INSTALLATION
 ------------
 
-Download the source from GitHub and compile the Xcode project.
+a) Download the prebuilt binaries and place the extracted binaries
+   in a location writeable by you.
+
+b) Download the source from GitHub and compile it with the Xcode project.
 
 
 PROBLEMS
 --------
 
-Feature requests and bugs can be reported on the Github issue page:
+Feature requests and bugs can be reported through on the Github issue page:
 
 http://github.com/mkroehnert/UrTunes/issues
+
+The applications menu entry 'Report Bug ...' will also take you there.
