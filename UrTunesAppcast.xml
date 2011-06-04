@@ -39,7 +39,7 @@
       <item>
         <title>Version 0.3</title>
         <sparkle:releaseNotesLink>
-                http://mkroehnert.github.com/UrTunes/release-notes/ReleaseNotes.html\#v0.3
+                http://mkroehnert.github.com/UrTunes/release-notes/ReleaseNotes.html#v0.3
         </sparkle:releaseNotesLink>
         <sparkle:minimumSystemVersion>10.5.8</sparkle:minimumSystemVersion>
         <pubDate>So, 05 Jun 2011 00:33:43 +0200</pubDate>
