@@ -36,5 +36,19 @@
                    sparkle:dsaSignature="MC0CFQCD3h6FbpqNUZWJx9vzcVxcTalufAIUeg+yYafNCS93D2oxOdWU/lYUbLE=" />
       </item>
 <!-- v0.3 -->
+      <item>
+        <title>Version 0.3</title>
+        <sparkle:releaseNotesLink>
+                http://mkroehnert.github.com/UrTunes/release-notes/ReleaseNotes.html\#v0.3
+        </sparkle:releaseNotesLink>
+        <sparkle:minimumSystemVersion>10.5.8</sparkle:minimumSystemVersion>
+        <pubDate>So, 05 Jun 2011 00:33:43 +0200</pubDate>
+        <pubDate>Wed, 13 Sep 2010 12:30:00 +0001</pubDate>
+        <enclosure url="http://github.com/downloads/mkroehnert/UrTunes/UrTunes-0.3.tar.bz2"
+                   sparkle:version="0.3"
+                   length="457865"
+                   type="application/octet-stream"
+                   sparkle:dsaSignature="MC0CFQC0K6fGT2Q4JKarNpjZZEuBlZnyiQIUKxtMLsSL8vJBJc3u1RLgjhnahnY=" />
+      </item>
    </channel>
 </rss>
