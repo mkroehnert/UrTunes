@@ -10,7 +10,7 @@
       <item>
         <title>Version 0.1</title>
         <sparkle:releaseNotesLink>
-				http://mkroehnert.github.com/UrTunes/release-notes/0.1.html
+				http://mkroehnert.github.com/UrTunes/release-notes/ReleaseNotes.html#v0.1
 		</sparkle:releaseNotesLink>
         <sparkle:minimumSystemVersion>10.5.8</sparkle:minimumSystemVersion>
         <pubDate>Wed, 11 Sep 2010 14:00:00 +0001</pubDate>
@@ -25,7 +25,7 @@
       <item>
         <title>Version 0.2</title>
         <sparkle:releaseNotesLink>
-				http://mkroehnert.github.com/UrTunes/release-notes/0.2.html
+				http://mkroehnert.github.com/UrTunes/release-notes/ReleaseNotes.html#v0.2
 		</sparkle:releaseNotesLink>
         <sparkle:minimumSystemVersion>10.5.8</sparkle:minimumSystemVersion>
         <pubDate>Wed, 13 Sep 2010 12:30:00 +0001</pubDate>
