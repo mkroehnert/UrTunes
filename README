@@ -4,6 +4,8 @@ ABOUT
 UrTunes is a small application which can control iTunes
 through a menu bar icon, a floating panel, or global
 hotkeys.
+Information about the current song is displayed through
+a Growl notification.
 
 It was started as a learning experience and because the
 TotalTunesControl developers cut off the free version of their
@@ -20,6 +22,7 @@ FEATURES
 - automatic update
 - global hotkeys
 - report bug functionality
+- song notifications through Growl
 
 
 REQUIREMENTS
