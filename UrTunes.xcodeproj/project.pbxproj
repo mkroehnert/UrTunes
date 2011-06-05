@@ -21,6 +21,7 @@
 		4DC5FE2B139B5DC3002C138B /* Growl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC5FE2A139B5DC3002C138B /* Growl.framework */; };
 		4DC5FE2E139B5DE5002C138B /* Growl.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4DC5FE2A139B5DC3002C138B /* Growl.framework */; };
 		4DC5FE38139B6065002C138B /* Growl Registration Ticket.growlRegDict in Resources */ = {isa = PBXBuildFile; fileRef = 4DC5FE29139B5B83002C138B /* Growl Registration Ticket.growlRegDict */; };
+		4DC5FE3D139B6100002C138B /* UTGrowlController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC5FE3C139B6100002C138B /* UTGrowlController.m */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -63,6 +64,8 @@
 		4D3A493E123E16F30035C9CC /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/Preferences.xib; sourceTree = "<group>"; };
 		4DC5FE29139B5B83002C138B /* Growl Registration Ticket.growlRegDict */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "Growl Registration Ticket.growlRegDict"; path = "Resources/Growl Registration Ticket.growlRegDict"; sourceTree = "<group>"; };
 		4DC5FE2A139B5DC3002C138B /* Growl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Growl.framework; path = Frameworks/Growl.framework; sourceTree = "<group>"; };
+		4DC5FE3B139B6100002C138B /* UTGrowlController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UTGrowlController.h; path = Source/UTGrowlController.h; sourceTree = "<group>"; };
+		4DC5FE3C139B6100002C138B /* UTGrowlController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UTGrowlController.m; path = Source/UTGrowlController.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* UrTunes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UrTunes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -91,6 +94,8 @@
 				4D38ABFF122E4CDE001F4FFC /* UTDelegate.m */,
 				4D38AC12122EB22A001F4FFC /* UTiTunesController.h */,
 				4D38AC13122EB22A001F4FFC /* UTiTunesController.m */,
+				4DC5FE3B139B6100002C138B /* UTGrowlController.h */,
+				4DC5FE3C139B6100002C138B /* UTGrowlController.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -233,6 +238,7 @@
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
 				4D38AC00122E4CDE001F4FFC /* UTDelegate.m in Sources */,
 				4D38AC14122EB22A001F4FFC /* UTiTunesController.m in Sources */,
+				4DC5FE3D139B6100002C138B /* UTGrowlController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
