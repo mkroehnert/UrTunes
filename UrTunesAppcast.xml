@@ -56,12 +56,12 @@
                 http://mkroehnert.github.com/UrTunes/release-notes/ReleaseNotes.html#v0.4
         </sparkle:releaseNotesLink>
         <sparkle:minimumSystemVersion>10.5.8</sparkle:minimumSystemVersion>
-        <pubDate>So, 05 Jun 2011 10:04:37 +0200</pubDate>
+        <pubDate>So, 05 Jun 2011 10:16:04 +0200</pubDate>
         <enclosure url="http://github.com/downloads/mkroehnert/UrTunes/UrTunes-0.4.tar.bz2"
                    sparkle:version="0.4"
-                   length="459782"
+                   length="458263"
                    type="application/octet-stream"
-                   sparkle:dsaSignature="MC0CFQCahU+4F4Oaj7f+TbVXSC2hku2YdwIUJnhqp1Q9QyLERCo8+yAg6IfTqhU=" />
+                   sparkle:dsaSignature="MCwCFEaBWLGGn9VnVqbJQBPdU9UEiUU1AhR2yzZ6ZNg99nPHcjqLncwobiLCXw==" />
       </item>
    </channel>
 </rss>
