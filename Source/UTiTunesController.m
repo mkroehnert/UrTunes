@@ -16,6 +16,7 @@
  */
 
 #import "UTiTunesController.h"
+#import "UTGrowlController.h"
 #import "iTunes.h"
 
 
@@ -30,10 +31,19 @@
         playPauseString = @"Play";
         iTunesRunning = NO;
         [self resetTrackInformation];
+        growlController = [[UTGrowlController alloc] init];
     }
 
     return self;
 }
+
+
+- (void) dealloc
+{
+	[growlController release];
+    [super dealloc];
+}
+
 
 
 - (void) setITunesVolume:(NSInteger)newVolume
@@ -180,6 +190,7 @@
 
     [self updatePlayPauseTitle];
     [self updateAlbumArt];
+    [growlController postNewTrackName:iTunesTrackName withArtist:iTunesArtistName andAlbumArt:iTunesAlbumArt];
 }
 
 @end

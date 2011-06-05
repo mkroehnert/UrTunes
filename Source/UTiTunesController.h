@@ -18,9 +18,11 @@
 #import <Cocoa/Cocoa.h>
 
 @class iTunesApplication;
+@class UTGrowlController;
 
 @interface UTiTunesController : NSObject {
     iTunesApplication* iTunes;
+    UTGrowlController* growlController;
     NSInteger iTunesVolume;
     NSString* iTunesTrackName;
     NSString* iTunesArtistName;
