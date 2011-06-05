@@ -45,11 +45,11 @@
         <pubDate>So, 05 Jun 2011 00:33:43 +0200</pubDate>
         <enclosure url="http://github.com/downloads/mkroehnert/UrTunes/UrTunes-0.3.tar.bz2"
                    sparkle:version="0.3"
-                   length="457865"
+                   length="456472"
                    type="application/octet-stream"
-                   sparkle:dsaSignature="MC0CFQC0K6fGT2Q4JKarNpjZZEuBlZnyiQIUKxtMLsSL8vJBJc3u1RLgjhnahnY=" />
+                   sparkle:dsaSignature="MC0CFQCR32l4ew6fKURf3dbbT9D3rp1F2gIUGOfbGx5nxJv7HXJZ/s0/4aA6ENo=" />
       </item>
-<!-- v0.4 -->
+<!-- v0.4 >
       <item>
         <title>Version 0.4</title>
         <sparkle:releaseNotesLink>
@@ -62,6 +62,6 @@
                    length="458263"
                    type="application/octet-stream"
                    sparkle:dsaSignature="MCwCFGDa4fwfcRiBhH1IKyoZgWefEwu0AhRzw6cG0mDtSxjFH3v8sturyX66Kw==" />
-      </item>
+      </item-->
    </channel>
 </rss>
