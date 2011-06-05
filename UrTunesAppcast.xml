@@ -43,7 +43,6 @@
         </sparkle:releaseNotesLink>
         <sparkle:minimumSystemVersion>10.5.8</sparkle:minimumSystemVersion>
         <pubDate>So, 05 Jun 2011 00:33:43 +0200</pubDate>
-        <pubDate>Wed, 13 Sep 2010 12:30:00 +0001</pubDate>
         <enclosure url="http://github.com/downloads/mkroehnert/UrTunes/UrTunes-0.3.tar.bz2"
                    sparkle:version="0.3"
                    length="457865"
@@ -58,7 +57,6 @@
         </sparkle:releaseNotesLink>
         <sparkle:minimumSystemVersion>10.5.8</sparkle:minimumSystemVersion>
         <pubDate>So, 05 Jun 2011 10:04:37 +0200</pubDate>
-        <pubDate>Wed, 13 Sep 2010 12:30:00 +0001</pubDate>
         <enclosure url="http://github.com/downloads/mkroehnert/UrTunes/UrTunes-0.4.tar.bz2"
                    sparkle:version="0.4"
                    length="459782"
